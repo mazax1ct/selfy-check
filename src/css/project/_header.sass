@@ -1,0 +1,155 @@
+.header
+  background-color: #fff
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 10
+
+  &__top
+    border-bottom: 1px solid #F5F7FA
+    padding-top: 27px
+    padding-bottom: 26px
+
+  &__top-container
+    align-items: center
+    display: flex
+
+  &__logo
+    width: 82px
+
+  &__phone
+    font-size: 20px
+    font-weight: 500
+    line-height: 1.7
+    margin-left: 58px
+    margin-bottom: 0
+
+  &__phone-link
+    color: $text-color
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: $text-color-light
+      border-bottom: 1px dashed
+
+  &__search
+    margin-left: auto
+
+  &__user-block
+    margin-left: 20px
+
+  &__login
+    background-color: #F7F9FC
+    border-radius: 25px
+    color: $text-color
+    display: inline-block
+    font-size: 16px
+    font-weight: 500
+    line-height: 34px
+    padding: 7px 26px 9px
+    text-decoration: none
+    transition: background-color 0.3s
+    vertical-align: top
+
+    &:hover,
+    &:focus
+      background-color: darken(#F7F9FC, 5%)
+
+.header-search
+  border-radius: 25px
+  height: 50px
+  min-width: 50px
+  overflow: hidden
+  position: relative
+  transition: width 0.5s
+  width: 50px
+
+  &.is-active
+    width: 380px
+
+    .header-search__input
+      opacity: 1
+
+  &__input
+    background-color: #F7F9FC
+    border-radius: 25px
+    border: none
+    font-size: 16px
+    font-weight: 500
+    height: 50px
+    line-height: 34px
+    opacity: 0
+    padding: 7px 75px 9px 20px
+    transition: opacity 0.5s
+    width: 380px
+
+    &::-webkit-input-placeholder
+      color: $no-active
+      opacity: 1
+
+    &::-moz-placeholder
+      color: $no-active
+      opacity: 1
+
+    &:-ms-input-placeholder
+      color: $no-active
+      opacity: 1
+
+  &__submit
+    align-items: center
+    background-color: #F7F9FC
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    display: flex
+    height: 50px
+    justify-content: center
+    left: auto
+    position: absolute
+    padding: 0
+    right: 0
+    top: 0
+    width: 50px
+    z-index: 1
+
+    &:focus
+      outline: none
+
+    &.no-active
+      .header-search__submit-icon
+        fill: $no-active
+
+  &__submit-icon
+    fill: $text-color
+    height: 24px
+    transition: fill 0.5s
+    width: 24px
+
+.main-menu
+  display: flex
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &__item
+    margin-right: 36px
+
+  &__link
+    color: $text-color
+    display: block
+    font-size: 13px
+    font-weight: 500
+    line-height: 1.38461
+    padding-top: 24px
+    padding-bottom: 24px
+    text-transform: uppercase
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: $text-color-light
+
+.sub-menu
+  display: none

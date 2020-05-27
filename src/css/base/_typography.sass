@@ -1,0 +1,197 @@
+body
+  font-family: 'Gotham Pro', Arial, sans-serif
+  font-size: 16px
+  line-height: 1.625
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6
+  font-weight: 700
+
+h1,.h1
+  font-size: 62px
+  line-height: 1.12903
+  margin-bottom: 20px
+  margin-top: 0
+
+h2,.h2
+  font-size: 42px
+  line-height: 1.23809
+  margin-bottom: 10px
+
+h3,.h3
+  font-size: 24px
+  line-height: 1.41666
+  margin-bottom: 30px
+
+h4,.h4
+  font-size: 20px
+  line-height: 1.5
+  margin-bottom: 20px
+
+p,
+ul,
+ol,
+table,
+.table-responsive
+  margin-top: 0
+  margin-bottom: 20px
+
+  &:last-child
+    margin-bottom: 0
+
+ul,
+ol
+  &:not([class]),
+  &.list
+    list-style: none
+    margin-bottom: 40px
+    padding: 0
+
+    li
+      &:not(:last-child)
+        margin-bottom: 5px
+
+ul
+  &:not([class]),
+  &.list
+    li
+      padding-left: 24px
+      position: relative
+
+      &::before
+        content: '•'
+        left: 0
+        position: absolute
+        top: 0
+
+ul
+  &.list--blue
+    li
+      &::before
+        color: $color-blue
+
+  &.list--red
+    li
+      &::before
+        color: $color-red
+
+table
+  border-collapse: collapse
+  max-width: 100%
+  text-align: left
+  width: 100%
+
+  th,
+  td
+    border: none
+    border-bottom: 1px solid
+    padding: 10px
+    vertical-align: top
+
+img
+  height: auto
+  max-width: 100%
+  vertical-align: top
+
+.color-blue
+  color: $color-blue
+
+.color-red
+  color: $color-red
+
+.big-link
+  background-color: rgba($color-blue, 0.07)
+  border-radius: 20px
+  border: none
+  color: $color-blue
+  display: block
+  font-weight: 700
+  line-height: 1.125
+  min-height: 106px
+  margin-bottom: 80px
+  padding-top: 33px
+  padding-bottom: 28px
+  transition: background-color 0.3s, color 0.3s
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+
+  &:hover
+    background-color: $color-blue-dark
+    color: #fff
+
+    .big-link__icon
+      width: 90px
+
+    .big-link__arrow
+      fill: #fff
+
+  &__text
+    display: block
+    margin-bottom: 20px
+
+  &__icon
+    display: flex
+    height: 9px
+    justify-content: flex-end
+    margin-left: auto
+    margin-right: auto
+    overflow: hidden
+    transition: width 0.3s
+    width: 50px
+
+  &__arrow
+    fill: $color-blue
+    height: 9px
+    min-width: 90px
+    transition: fill 0.3s
+    vertical-align: top
+    width: 90px
+
+.small-link
+  color: $color-blue
+  display: inline-block
+  font-size: 13px
+  font-weight: 700
+  line-height: 1.38461
+  padding: 20px
+  transition: color 0.3s
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  vertical-align: top
+
+  &:hover
+    color: $color-blue-dark
+
+    .small-link__icon
+      width: 90px
+
+    .small-link__arrow
+      fill: $color-blue-dark
+
+  &__text
+    display: block
+    margin-bottom: 16px
+
+  &__icon
+    display: flex
+    height: 9px
+    justify-content: flex-end
+    margin-left: auto
+    margin-right: auto
+    overflow: hidden
+    transition: width 0.3s
+    width: 50px
+
+  &__arrow
+    fill: $color-blue
+    height: 9px
+    min-width: 90px
+    transition: fill 0.3s
+    vertical-align: top
+    width: 90px
