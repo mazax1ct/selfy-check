@@ -5,15 +5,18 @@
 .article-item
   color: $text-color
   display: block
-  font-size: 24px
+  font-size: 16px
   font-weight: 500
   line-height: 1.41666
   text-decoration: none
 
+  @media(min-width: 980px)
+    font-size: 24px
+
   &:hover,
   &:focus
     text-decoration: underline
-    
+
     .article-item__image
       img
         transform: scale(1.05)
@@ -57,3 +60,6 @@
 
 .more-block
   text-align: center
+
+  &:last-child
+    margin-bottom: -20px
