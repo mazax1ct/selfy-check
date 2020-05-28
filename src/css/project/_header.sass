@@ -228,10 +228,13 @@
     padding: 0
     right: 0
     top: 0
+    transition: background-color 0.3s
     width: 50px
     z-index: 1
 
+    &:hover,
     &:focus
+      background-color: darken(#F7F9FC, 5%)
       outline: none
 
     &.no-active
@@ -332,7 +335,11 @@
       .sub-menu
         @media(min-width: 960px)
           display: block
-          transform: translateY(0)
+
+    &:focus-within
+      .sub-menu
+        @media(min-width: 960px)
+          display: block
 
     &:last-child
       .sub-menu
@@ -383,8 +390,6 @@
     position: absolute
     padding: 15px 30px 18px
     top: 55px
-    transition: transform 0.3s
-    transform: translateY(-15px)
     width: 320px
     z-index: 1
 

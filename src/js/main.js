@@ -36,6 +36,7 @@ $(window).on("scroll", resize_scroll).on("resize", resize_scroll);
 $(document).on('click', '.js-search', function () {
   $(this).closest('.header-search').toggleClass("is-active");
   $(this).toggleClass("no-active");
+  $(this).closest('.header-search').find('.header-search__input').focus();
   if($(this).closest('.header-search').find('.header-search__input').val() == '') {
     return false;
   }
