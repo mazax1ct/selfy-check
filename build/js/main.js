@@ -1,7 +1,7 @@
 //функция навешивания класса на шапку
 var resize_scroll = function(e) {
   var h = $(".header");
-  if($(window).scrollTop() > h.height()) {
+  if($(window).scrollTop() > h.height()*2) {
     h.addClass("scrolled");
   } else {
     h.removeClass("scrolled");
@@ -21,7 +21,10 @@ $(document).ready(function () {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
-      mobileFirst: true
+      mobileFirst: true,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      pauseOnDotsHover: false
     });
   }
 });

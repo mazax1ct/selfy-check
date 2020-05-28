@@ -21,7 +21,10 @@ $(document).ready(function () {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
-      mobileFirst: true
+      mobileFirst: true,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      pauseOnDotsHover: false
     });
   }
 });

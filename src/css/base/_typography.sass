@@ -198,10 +198,13 @@ img
   &.color-blue
     color: $color-blue
 
+    .small-link__arrow
+      fill: $color-blue
+
     &:hover,
     &:focus
       .small-link__arrow
-        fill: $color-blue
+        fill: $color-blue-dark
 
   &.color-black
     color: $text-color
@@ -272,7 +275,7 @@ img
 
   &__arrow
     display: block
-    fill: $color-blue
+    fill: $color-blue-dark
     height: 9px
     min-width: 90px
     margin-left: auto
@@ -280,3 +283,54 @@ img
     opacity: 0
     transition: opacity 0.3s
     width: 90px
+
+.bolder
+  font-weight: 500
+
+.overlayed-image
+  color: #fff
+  display: block
+  margin-bottom: 30px
+  overflow: hidden
+  position: relative
+  text-decoration: none
+
+  &__image
+    display: block
+    position: relative
+
+    img
+      transition: transform 0.3s
+      transform: scale(1)
+
+    &::after
+      background-color: rgba(#393C4C, 0.6)
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
+
+  &__title
+    bottom: 0
+    font-size: 16px
+    font-weight: 500
+    list-style: 1.41666
+    left: 0
+    padding: 22px 36px
+    position: absolute
+    top: auto
+    width: 100%
+    z-index: 2
+
+    @media(min-width: 960px)
+      font-size: 24px
+
+a.overlayed-image
+  &:hover,
+  &:focus
+
+    img
+      transform: scale(1.05)
