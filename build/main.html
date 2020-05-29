@@ -45,6 +45,9 @@
     <symbol id="star" viewBox="0 0 24 24">
       <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="arrow_top" viewBox="0 0 24 24">
+      <polygon points="3.8,15.7 3.2,14.9 12.9,8.1 21.8,14.9 21.2,15.7 12.9,9.3 "/>
+    </symbol>
   </svg>
 
   <header class="header">
@@ -417,6 +420,12 @@
       </div>
     </div>
   </footer>
+
+  <a id="go-top" class="go-top" href="#top" title="Наверх">
+    <svg class="go-top__icon" aria-hidden="true">
+      <use xlink:href="#arrow_top" />
+    </svg>
+  </a>
 
   <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>

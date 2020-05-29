@@ -49,11 +49,19 @@ body
         width: 33.33333%
 
   &--4
+    @media(min-width: 375px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -10px
+      margin-right: -10px
+
     .cols__item
-      @media(min-width: 768px)
+      @media(min-width: 375px)
+        padding-left: 10px
+        padding-right: 10px
         width: 50%
 
-      @media(min-width: 960px)
+      @media(min-width: 768px)
         width: 25%
 
   &__item

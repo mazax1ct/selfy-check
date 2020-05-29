@@ -254,14 +254,18 @@ img
   color: $text-color
   cursor: pointer
   display: block
-  font-size: 16px
+  font-size: 14px
   font-weight: 500
-  line-height: 24px
-  padding: 44px 20px
+  line-height: 1.5
+  padding: 20px
   text-align: center
   text-decoration: none
   transition: background-color 0.3s
   width: 100%
+
+  @media(min-width: 768px)
+    font-size: 16px
+    padding: 44px 20px
 
   &:hover,
   &:focus
@@ -274,7 +278,10 @@ img
   &__image,
   &__title
     display: block
-    margin-bottom: 30px
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      margin-bottom: 30px
 
   &__icon
     display: flex

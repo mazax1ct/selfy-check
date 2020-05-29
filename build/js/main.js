@@ -12,6 +12,22 @@ $(document).ready(function () {
   //запуск функции навешивания класса на шапку
   resize_scroll();
 
+  //кнопка наверх
+  var btn = $('#go-top');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('is-active');
+    } else {
+      btn.removeClass('is-active');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
   //слайдер главного баннера
   if($('.js-page-slider').length) {
     $('.js-page-slider').slick({
