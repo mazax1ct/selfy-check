@@ -64,8 +64,9 @@ $(document).on('click', '.js-menu-toggler', function () {
 });
 
 //3-d блоки
-$(".js-block-3d img").hover(function() {
-  var src = this.src;
-  this.src = $(this).data("img");
-  $(this).data("img", src);
+$(".js-block-3d").hover(function() {
+  var img = $(this).find('img');
+  var src = img.attr('src');
+  img.attr('src', img.data("img"));
+  img.data("img", src);
 });

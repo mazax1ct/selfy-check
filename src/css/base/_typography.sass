@@ -203,6 +203,8 @@ img
 
     &:hover,
     &:focus
+      color: $color-blue-dark
+
       .small-link__arrow
         fill: $color-blue-dark
 
@@ -265,23 +267,34 @@ img
   &:focus
     background-color: #F7F9FC
 
-    .button-link__arrow
+    .button-link__icon
       opacity: 1
+      width: 90px
 
   &__image,
   &__title
     display: block
     margin-bottom: 30px
 
+  &__icon
+    display: flex
+    height: 9px
+    justify-content: flex-end
+    margin-left: auto
+    margin-right: auto
+    overflow: hidden
+    opacity: 0
+    transition: width 0.3s, opacity 0.3s
+    width: 50px
+
   &__arrow
     display: block
-    fill: $color-blue-dark
+    fill: $color-blue
     height: 9px
     min-width: 90px
     margin-left: auto
     margin-right: auto
-    opacity: 0
-    transition: opacity 0.3s
+
     width: 90px
 
 .bolder
