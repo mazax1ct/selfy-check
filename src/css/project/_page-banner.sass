@@ -3,14 +3,13 @@
 
   &__image
     display: block
-    height: 400px
     max-width: initial
-    max-height: 675px
-    object-fit: cover
     width: 100%
 
-    @media(min-width: 960px)
+    @media(min-width: 1240px)
       height: 675px
+      max-height: 675px
+      object-fit: cover
 
   &__content
     align-items: flex-start
@@ -32,7 +31,7 @@
     @media(min-width: 768px)
       padding-bottom: 40px
 
-    @media(min-width: 960px)
+    @media(min-width: 1240px)
       padding-bottom: 80px
 
   &__title
@@ -46,7 +45,7 @@
     @media(min-width: 768px)
       font-size: 42px
 
-    @media(min-width: 960px)
+    @media(min-width: 1240px)
       font-size: 62px
 
   &__text
@@ -58,13 +57,15 @@
     @media(min-width: 768px)
       font-size: 16px
 
-    @media(min-width: 960px)
+    @media(min-width: 1240px)
       font-size: 24px
 
   .small-link
     margin-bottom: -20px
-    margin-top: 40px
     padding-left: 0
+
+    @media(min-width: 1240px)
+      margin-top: 40px
 
 .page-slider
   margin-bottom: 40px
@@ -87,7 +88,7 @@
     width: 100%
     z-index: 1
 
-    @media(min-width: 960px)
+    @media(min-width: 1240px)
       top: 80px
 
     li
@@ -179,8 +180,5 @@
     transform: rotate(360deg)
 
 @keyframes close-wrapper
-  //from
-    clip: rect(0px, 100px, 100px, 50px)
-
   to
     clip: rect(auto, auto, auto, auto)
