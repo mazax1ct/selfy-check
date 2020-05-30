@@ -48,6 +48,18 @@ $(document).ready(function () {
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);
 
+if($('body').width() > 1239){
+  $(window).on('scroll', function() {
+  	var st = $(window).scrollTop();
+    $('.fade-up:not(.animate)').each(function() {
+  		var $this = $(this);
+  		if($this.offset().top + 250 < st + $(window).height()) {
+  			$this.addClass('animate');
+  		}
+  	});
+  });
+}
+
 //поиск
 $(document).on('click', '.js-search', function () {
   $(this).closest('.header-search').toggleClass("is-active");
