@@ -1,8 +1,10 @@
 .fade-up
-  opacity: 0
-  transform: translateY(20px)
-  transition: all 0.7s
+  @media(min-width: 1240px)
+    opacity: 0
+    transform: translateY(20px)
+    transition: all 0.7s
 
   &.animate
-    opacity: 1
-    transform: translateY(0)
+    @media(min-width: 1240px)
+      opacity: 1
+      transform: translateY(0)
