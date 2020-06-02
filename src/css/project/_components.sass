@@ -1,0 +1,36 @@
+.components-list
+  margin-top: 40px
+
+.component
+  color: $text-color
+  display: block
+  font-size: 16px
+  font-weight: 700
+  line-height: 1.41666
+  text-decoration: none
+
+  @media(min-width: 1240px)
+    font-size: 24px
+
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+    img
+      transform: scale(1.05)
+
+  &__image
+    align-items: center
+    background-color: #F7F9FC
+    display: flex
+    height: 300px
+    justify-content: center
+    margin-bottom: 20px
+    padding: 20px
+
+    img
+      transform: scale(1)
+      transition: transform 0.3s
+
+  &__title
+    display: block

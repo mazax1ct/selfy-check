@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Selfy Check - Главная</title>
+  <title>Selfy Check - Продукты</title>
 
   <meta name="description" content="">
 
@@ -73,11 +73,16 @@
           </form>
         </div>
         <div class="header__user-block">
-          <a class="header__login" href="#">
-            <svg class="header__login-icon" aria-hidden="true">
+          <a class="header__personal" href="#">
+            <svg class="header__personal-icon" aria-hidden="true">
               <use xlink:href="#user" />
             </svg>
-            <span class="header__login-text">Войти</span>
+            <span class="header__personal-text">Константинопольский А.С</span>
+          </a>
+          <a class="header__logout" href="#" title="Выйти">
+            <svg class="header__logout-icon" aria-hidden="true">
+              <use xlink:href="#logout" />
+            </svg>
           </a>
           <button class="js-menu-toggler menu-toggler" type="button"><span class="menu-toggler__burger"></span></button>
         </div>
@@ -87,7 +92,7 @@
       <div class="container">
         <ol class="main-menu">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="about.html">O компании</a>
+            <a class="main-menu__link is-active" href="about.html">O компании</a>
             <ol class="sub-menu">
               <li class="sub-menu__item"><a class="sub-menu__link" href="#">Производитель</a></li>
               <li class="sub-menu__item"><a class="sub-menu__link" href="#">Производство</a></li>
@@ -144,81 +149,29 @@
   <div class="wrapper">
     <div class="page-content">
 
-      <div class="js-page-slider page-slider">
-        <div class="page-slider__slide">
-          <div class="page-banner">
-            <picture>
-              <source srcset="images/content/banners/main-page/desktop/main-page.jpg" media="(min-width: 768px)">
-              <img class="page-banner__image" srcset="images/content/banners/main-page/mobile/main_banner_slide-1.jpg" alt="alt">
-            </picture>
-            <div class="page-banner__content">
-              <h1 class="page-banner__title">Мы создаем<br> <span class="color-blue">здоровое</span> будущее</h1>
-              <div class="page-banner__text">
-                <p>Эффективные и точные системы самоконтроля гликемии, мотивирующие к лучшей компенсации диабета</p>
-              </div>
-              <a class="small-link" href="#">
-                <span class="small-link__text">УЗНАТЬ БОЛЬШЕ</span>
-                <span class="small-link__icon">
-                  <svg class="small-link__arrow" aria-hidden="true">
-                    <use xlink:href="#big-link" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="page-slider__slide">
-          <div class="page-banner">
-            <picture>
-              <source srcset="images/content/banners/main-page/desktop/main-page_2.jpg" media="(min-width: 768px)">
-              <img class="page-banner__image" srcset="images/content/banners/main-page/mobile/main_banner_slide-2.jpg" alt="alt">
-            </picture>
-            <div class="page-banner__content">
-              <h2 class="page-banner__title">Программное<br> обеспечение</h2>
-              <div class="page-banner__text">
-                <p>Программное обеспечение <span class="color-blue">Selfy Check Diabetes Management System©</span> - лучшая компенсация диабета</p>
-              </div>
-              <a class="small-link" href="#">
-                <span class="small-link__text">УЗНАТЬ БОЛЬШЕ</span>
-                <span class="small-link__icon">
-                  <svg class="small-link__arrow" aria-hidden="true">
-                    <use xlink:href="#big-link" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="page-slider__slide">
-          <div class="page-banner">
-            <picture>
-              <source srcset="images/content/banners/main-page/desktop/main-page_3.jpg" media="(min-width: 768px)">
-              <img class="page-banner__image" srcset="images/content/banners/main-page/mobile/main_banner_slide-3.jpg" alt="alt">
-            </picture>
-            <div class="page-banner__content">
-              <h2 class="page-banner__title">Системы <span class="color-blue">SelfyCheck</span></h2>
-              <div class="page-banner__text">
-                <p>Эффективные и точные системы самоконтроля гликемии, мотивирующие к лучшей компенсации диабета</p>
-              </div>
-              <a class="small-link" href="#">
-                <span class="small-link__text">УЗНАТЬ БОЛЬШЕ</span>
-                <span class="small-link__icon">
-                  <svg class="small-link__arrow" aria-hidden="true">
-                    <use xlink:href="#big-link" />
-                  </svg>
-                </span>
-              </a>
-            </div>
+      <div class="page-banner">
+        <picture>
+          <source srcset="images/content/banners/products/desktop/products.jpg" media="(min-width: 768px)">
+          <img class="page-banner__image" srcset="images/content/banners/about/mobile/about_banner-1.jpg" alt="alt">
+        </picture>
+        <div class="page-banner__content">
+          <h1 class="page-banner__title">Системы<br> <span class="color-blue">SelfyCheck</span></h1>
+          <div class="page-banner__text">
+            <p>Эффективные и точные системы самоконтроля гликемии, мотивирующие к лучшей компенсации диабета</p>
           </div>
         </div>
       </div>
 
       <div class="container">
-        <h2 class="fade-up">Глюкометры <span class="color-blue">Selfy&nbsp;Check</span></h2>
-        <p class="h3 fade-up">Современный стандарт качественной компенсации диабета</p>
-        <div class="fade-up" style="max-width: 1004px; margin-bottom: 40px;">
-          <p>Selfy Check – высокоточные и простые в использовании системы для осуществления контроля уровня глюкозы в крови.</p>
-          <p>Простые элементы управления, высокая точность глюкометров, расширенные функциональные возможности, система прокола, сводящая к минимуму болевые ощущения и понятная интерпретация данных делают измерение глюкозы быстрым, простым и позволяет получить полную картину уникального гликемического профиля, что делает системы Selfy Check высокоэффективными в отношении лучшей компенсации сахарного диабета.</p>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li>Продукты</li>
+        </ol>
+
+        <h2 class="fade-up">Системы самоконтроля <span class="color-blue">Selfy&nbsp;Check</span></h2>
+        <p class="h3 fade-up">Современный подход к самоконтролю глюкозы крови</p>
+        <div class="fade-up" style="max-width: 945px; margin-bottom: 40px;">
+          <p>Глюкометры Selfy Check – это высокоэффективные системы самоконтроля для улучшения компенсации сахарного диабета за счет интегрированного программного обеспечения оценки данных глюкозы крови SelfyCheck Health Care Management System©</p>
         </div>
         <p class="fade-up" style="max-width: 754px; margin-bottom: 30px"><b>Используйте «Помощник выбора глюкометра» для того, чтобы быстро осуществить подбор нужного Вам глюкометра с учетом индивидуальных предпочтений.</b></p>
         <a class="big-link" href="#">
@@ -265,129 +218,32 @@
             </p>
           </div>
         </div>
-        <div class="cols cols--4 buttons-list-1">
+        <h2>Компоненты системы <span class="color-blue">SelfyCheck</span></h2>
+        <div class="cols cols--4 components-list">
           <div class="cols__item">
-            <a class="button-link" href="https://www.youtube.com/watch?v=xg_fEeQ553U" data-fancybox="video_1">
-              <span class="button-link__image"><img src="images/content/icons/icon-1.svg" alt=""></span>
-              <span class="button-link__title">Презентация<br> систем</span>
-              <span class="button-link__icon">
-                <svg class="button-link__arrow" aria-hidden="true">
-                  <use xlink:href="#big-link" />
-                </svg>
-              </span>
+            <a class="component" href="#">
+              <span class="component__image"><img width="118" src="images/content/img_10.png" alt="Тест полоски Selfy Check"></span>
+              <span class="component__title">Тест полоски Selfy&nbsp;Check</span>
             </a>
           </div>
           <div class="cols__item">
-            <a class="button-link" href="https://www.youtube.com/watch?v=xg_fEeQ553U" data-fancybox="video_2">
-              <span class="button-link__image"><img src="images/content/icons/icon-2.svg" alt=""></span>
-              <span class="button-link__title">Производитель<br> систем</span>
-              <span class="button-link__icon">
-                <svg class="button-link__arrow" aria-hidden="true">
-                  <use xlink:href="#big-link" />
-                </svg>
-              </span>
+            <a class="component" href="#">
+              <span class="component__image"><img width="186" src="images/content/img_11.png" alt="Ручка прокалыватель"></span>
+              <span class="component__title">Ручка<br> прокалыватель</span>
             </a>
           </div>
           <div class="cols__item">
-            <a class="button-link" href="https://www.youtube.com/watch?v=xg_fEeQ553U" data-fancybox="video_3">
-              <span class="button-link__image"><img src="images/content/icons/icon-5.svg" alt=""></span>
-              <span class="button-link__title">Процесс<br> мониторинга</span>
-              <span class="button-link__icon">
-                <svg class="button-link__arrow" aria-hidden="true">
-                  <use xlink:href="#big-link" />
-                </svg>
-              </span>
+            <a class="component" href="#">
+              <span class="component__image"><img width="156" src="images/content/img_12.png" alt="Ланцеты"></span>
+              <span class="component__title">Ланцеты</span>
             </a>
           </div>
           <div class="cols__item">
-            <a class="button-link" href="#">
-              <span class="button-link__image"><img src="images/content/icons/icon-3.svg" alt=""></span>
-              <span class="button-link__title">Програмное<br> обеспечение</span>
-              <span class="button-link__icon">
-                <svg class="button-link__arrow" aria-hidden="true">
-                  <use xlink:href="#big-link" />
-                </svg>
-              </span>
+            <a class="component" href="#">
+              <span class="component__image"><img width="235" src="images/content/img_13.png" alt="Програмное обеспечение"></span>
+              <span class="component__title">Програмное обеспечение</span>
             </a>
           </div>
-        </div>
-        <a class="big-link" href="#">
-          <span class="big-link__text">Калькулятор расчета доз</span>
-          <span class="big-link__icon">
-            <svg class="big-link__arrow" aria-hidden="true">
-              <use xlink:href="#big-link" />
-            </svg>
-          </span>
-        </a>
-        <h2 class="fade-up">Школа <span class="color-blue">диабета</span></h2>
-        <p class="h3 fade-up" style="max-width: 743px">Получить знания и первоначальные рекомендации поможет раздел «Виртуальная Школа Диабета».</p>
-        <div class="cols cols--2 fade-up" style="margin-bottom: 40px;">
-          <div class="cols__item">
-            <p class="bulleted-text">Портал предоставит самую актуальную информацию в области диагностики, лечения и профилактики сахарного диабета, а также расскажет о принципах самоконтроля глюкозы.</p>
-          </div>
-          <div class="cols__item">
-            <p class="bulleted-text">В любую секунду Вы можете получить ответы на самый широкий ряд вопросов о сахарном диабете и современных подходах к контролю глюкозы крови.</p>
-          </div>
-        </div>
-        <p class="fade-up"><b>Пройдите простую регистрацию и получите полный доступ ко всем возможностям портала.</b></p>
-        <a class="big-link" href="#">
-          <span class="big-link__text">Пройти регистрацию</span>
-          <span class="big-link__icon">
-            <svg class="big-link__arrow" aria-hidden="true">
-              <use xlink:href="#big-link" />
-            </svg>
-          </span>
-        </a>
-        <div class="cols cols--3 articles-list">
-          <div class="cols__item articles-list__item">
-            <a class="article-item" href="#">
-              <span class="article-item__image">
-                <img src="images/content/img_3.jpg" alt="">
-                <button class="article-item__fav-button" type="button" title="Добавить в избранное">
-                  <svg class="article-item__fav-icon" aria-hidden="true">
-                    <use xlink:href="#star" />
-                  </svg>
-                </button>
-              </span>
-              Техника самоконтроля глюкозы крови.
-            </a>
-          </div>
-          <div class="cols__item articles-list__item">
-            <a class="article-item" href="#">
-              <span class="article-item__image">
-                <img src="images/content/img_4.jpg" alt="">
-                <button class="article-item__fav-button" type="button" title="Добавить в избранное">
-                  <svg class="article-item__fav-icon" aria-hidden="true">
-                    <use xlink:href="#star" />
-                  </svg>
-                </button>
-              </span>
-              Что такое сахарный диабет?
-            </a>
-          </div>
-          <div class="cols__item articles-list__item">
-            <a class="article-item" href="#">
-              <span class="article-item__image">
-                <img src="images/content/img_5.jpg" alt="">
-                <button class="article-item__fav-button is-active" type="button" title="Убрать из избранного">
-                  <svg class="article-item__fav-icon" aria-hidden="true">
-                    <use xlink:href="#star" />
-                  </svg>
-                </button>
-              </span>
-              Питание при сахарном диабете и избыточной массе тела.
-            </a>
-          </div>
-        </div>
-        <div class="more-block">
-          <a class="small-link color-blue" href="#">
-            <span class="small-link__text">ВСЕ статьи</span>
-            <span class="small-link__icon">
-              <svg class="small-link__arrow" aria-hidden="true">
-                <use xlink:href="#big-link" />
-              </svg>
-            </span>
-          </a>
         </div>
       </div>
     </div>

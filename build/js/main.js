@@ -8,6 +8,14 @@ var resize_scroll = function(e) {
   }
 };
 
+tippy('[data-tippy-content]', {
+  theme: 'white',
+  maxWidth: 275,
+  placement: 'top-start',
+  trigger: 'mouseenter click',
+  zIndex: 1
+});
+
 $(document).ready(function () {
   //запуск функции навешивания класса на шапку
   resize_scroll();
