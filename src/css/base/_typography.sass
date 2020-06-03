@@ -9,6 +9,7 @@ body
 
 a
   color: $color-blue
+  transition: color 0.3s
   text-decoration: none
 
   &:hover,
@@ -21,6 +22,7 @@ a
   color: $text-color
   cursor: pointer
   padding: 0
+  transition: color 0.3s
   text-decoration: underline
 
   &:hover,
@@ -99,12 +101,12 @@ ul
   &:not([class]),
   &.list
     li
-      padding-left: 24px
+      padding-left: 23px
       position: relative
 
       &::before
         content: '•'
-        left: 0
+        left: 2px
         position: absolute
         top: 0
 
@@ -118,6 +120,62 @@ ul
     li
       &::before
         color: $color-red
+
+ul
+  &.accordion
+    margin-bottom: 60px
+
+.unstyled
+  list-style: none
+  margin-top: 20px
+  margin-bottom: 30px
+  padding: 0
+
+  li
+    &:not(:last-child)
+      margin-bottom: 5px
+
+.accordion
+  &__toggler
+    cursor: pointer
+    display: inline-block
+    position: relative
+    padding-right: 29px
+
+    &.is-open
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2324BDFF' d='M18,16c-0.3,0-0.5-0.1-0.7-0.3L12,10.4l-5.3,5.3c-0.4,0.4-1,0.4-1.4,0s-0.4-1,0-1.4l6-6c0.4-0.4,1-0.4,1.4,0l6,6c0.4,0.4,0.4,1,0,1.4C18.5,15.9,18.3,16,18,16z'/%3E%3C/svg%3E%0A")
+
+      .accordion__body
+        display: block
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23A0A5C0' d='M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z'/%3E%3C/svg%3E%0A")
+      content: ''
+      height: 24px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 24px
+
+  &__body
+    display: none
+    margin-left: -23px
+    padding-top: 15px
+    padding-bottom: 15px
+
+  &__body-inner
+    background-color: #F7F9FC
+    border-radius: 20px
+    font-size: 13px
+    line-height: 1.46153
+    padding: 18px 23px 16px
+
+    p
+      &:not(:last-child)
+        margin-bottom: 5px
 
 table
   border-collapse: collapse
@@ -154,6 +212,9 @@ img
 
 .color-red
   color: $color-red
+
+.color-grey
+  color: $no-active
 
 .big-link
   background-color: rgba($color-blue, 0.07)
@@ -308,7 +369,7 @@ img
 
   @media(min-width: 768px)
     font-size: 16px
-    padding: 44px 20px
+    padding: 35px 20px 43px
 
   &:hover,
   &:focus

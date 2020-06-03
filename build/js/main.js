@@ -106,3 +106,12 @@ $(".js-block-3d").hover(function() {
   img.attr('src', img.data("img"));
   img.data("img", src);
 });
+
+//аккордион
+$(document).on('click', '.js-accordion-toggler', function () {
+  console.log('sdfsf');
+  var _this = $(this);
+  _this.next('.accordion__body').slideToggle('300', 'linear', function () {
+    _this.toggleClass("is-open");
+  });
+});
