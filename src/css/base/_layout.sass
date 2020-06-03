@@ -36,39 +36,8 @@ body
   @media(min-width: 960px)
     padding-bottom: 60px
 
-.cols
-  @media(min-width: 768px)
-    display: flex
-    flex-wrap: wrap
-    margin-left: -10px
-    margin-right: -10px
+.default-indent
+  margin-bottom: 40px
 
-  &--3
-    .cols__item
-      @media(min-width: 768px)
-        width: 33.33333%
-
-  &--4
-    @media(min-width: 375px)
-      display: flex
-      flex-wrap: wrap
-      margin-left: -10px
-      margin-right: -10px
-
-    .cols__item
-      @media(min-width: 375px)
-        padding-left: 10px
-        padding-right: 10px
-        width: 50%
-
-      @media(min-width: 768px)
-        width: 25%
-
-  &__item
-    margin-bottom: 20px
-
-    @media(min-width: 768px)
-      margin-bottom: 0
-      padding-left: 10px
-      padding-right: 10px
-      width: 50%
+  @media(min-width: 1240px)
+    margin-bottom: 80px
