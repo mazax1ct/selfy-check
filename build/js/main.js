@@ -51,6 +51,15 @@ $(document).ready(function () {
       pauseOnDotsHover: false
     });
   }
+
+  //плавный скролл к якорю при загрузке страницы
+  var myHash = location.hash;
+  location.hash = '';
+  if(myHash[1] != undefined) {
+    $('html, body').animate({
+        scrollTop: $(myHash).offset().top - 90
+    }, 700);
+  };
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -109,9 +118,16 @@ $(".js-block-3d").hover(function() {
 
 //аккордион
 $(document).on('click', '.js-accordion-toggler', function () {
-  console.log('sdfsf');
   var _this = $(this);
   _this.next('.accordion__body').slideToggle('300', 'linear', function () {
     _this.toggleClass("is-open");
   });
+});
+
+//скролл по якорю
+$(document).on('click', '.js-anchor-link', function () {
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 90
+  }, 500);
+  return false;
 });
