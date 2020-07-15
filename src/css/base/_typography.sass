@@ -36,22 +36,38 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6
-  font-weight: 700
   margin-top: 0
 
+h1,.h1,
+h2,.h2
+  font-weight: 700
+
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6
+  font-weight: 500
+
 h1,.h1
-  font-size: 42px
+  font-size: 30px
   line-height: 1.12903
   margin-bottom: 20px
   margin-top: 0
+
+  @media(min-width: 768px)
+    font-size: 42px
+    line-height: 1.12903
 
   @media(min-width: 960px)
     font-size: 62px
 
 h2,.h2
-  font-size: 28px
+  font-size: 24px
   line-height: 1.23809
   margin-bottom: 10px
+
+  @media(min-width: 768px)
+    font-size: 28px
 
   @media(min-width: 960px)
     font-size: 42px
@@ -72,6 +88,12 @@ h4,.h4
   @media(min-width: 960px)
     font-size: 20px
 
+h1 + h2,
+h1 + .h2,
+.h1 + h2,
+.h1 + .h2
+  margin-top: 40px
+
 p,
 table,
 .table-responsive
@@ -87,24 +109,23 @@ table,
 ul,
 ol
   margin-top: 0
-
-  &:not([class]),
-  &.list
-    list-style: none
-    margin-bottom: 40px
-    margin-top: 0
-    padding: 0
-
-    li
-      &:not(:last-child)
-        margin-bottom: 5px
+  margin-bottom: 40px
+  padding: 0
 
   &:last-child
     margin-bottom: 0
 
+  &:not([class]),
+  &.list
+    li
+      &:not(:last-child)
+        margin-bottom: 5px
+
 ul
   &:not([class]),
   &.list
+    list-style: none
+
     li
       padding-left: 23px
       position: relative
@@ -115,7 +136,6 @@ ul
         position: absolute
         top: 0
 
-ul
   &.list--blue
     li
       &::before
@@ -126,12 +146,23 @@ ul
       &::before
         color: $color-red
 
-ul
   &.accordion
     margin-bottom: 40px
 
     @media(min-width: 1240px)
       margin-bottom: 60px
+
+ol
+  list-style-position: inside
+
+  &:not([class]),
+  &.list
+    li
+      &:not(:last-child)
+        margin-bottom: 10px
+
+      &::marker
+        font-weight: 500
 
 .unstyled
   list-style: none
@@ -327,6 +358,10 @@ img
   &:focus
     .small-link__icon
       width: 90px
+
+  &--reverse
+    .small-link__icon
+      justify-content: flex-start
 
   &__text
     display: block
@@ -535,3 +570,14 @@ a.overlayed-image
 .text-align-md-right
   @media(min-width: 768px)
     text-align: right
+
+.page-text
+  max-width: 945px
+
+  ul,
+  ol
+    margin-top: 25px
+    margin-bottom: 25px
+
+.hidden
+  display: none

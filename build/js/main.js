@@ -57,7 +57,7 @@ $(document).ready(function () {
   location.hash = '';
   if(myHash[1] != undefined) {
     $('html, body').animate({
-        scrollTop: $(myHash).offset().top - 90
+      scrollTop: $(myHash).offset().top - 90
     }, 700);
   };
 });
@@ -127,7 +127,7 @@ $(document).on('click', '.js-accordion-toggler', function () {
 //скролл по якорю
 $(document).on('click', '.js-anchor-link', function () {
   $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top - 90
+    scrollTop: $($.attr(this, 'href')).offset().top - 90
   }, 500);
   return false;
 });

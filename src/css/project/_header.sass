@@ -352,12 +352,17 @@
     &:hover
       .sub-menu
         @media(min-width: 960px)
-          display: block
+          //display: block
+          height: auto
+          opacity: 1
+          padding: 15px 30px 18px
 
     &:focus-within
       .sub-menu
         @media(min-width: 960px)
-          display: block
+          height: auto
+          opacity: 1
+          padding: 15px 30px 18px
 
     &:last-child
       .sub-menu
@@ -403,11 +408,16 @@
     box-shadow: 0 5px 20px 0 rgba(#393C4C, 0.08)
     border-radius: 0 20px 20px 20px
     background-color: #fff
-    display: none
+    //display: none
+    height: 0
     left: 0
+    opacity: 0
+    overflow: hidden
     position: absolute
-    padding: 15px 30px 18px
+    padding: 0
+    //padding: 15px 30px 18px
     top: 55px
+    transition: opacity .35s ease
     width: 320px
     z-index: 1
 

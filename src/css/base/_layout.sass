@@ -35,7 +35,7 @@ body
   padding-bottom: 40px
 
   @media(min-width: 960px)
-    padding-bottom: 60px
+    padding-bottom: 80px
 
 .default-indent
   margin-bottom: 40px
@@ -48,3 +48,22 @@ body
 
   @media(min-width: 1240px)
     margin-bottom: 60px
+
+.page-columns
+  @media(min-width: 960px)
+    display: flex
+
+  &__left
+    display: none
+
+    @media(min-width: 960px)
+      display: block
+      min-width: 315px
+      width: 25.40322%
+
+  &__right
+    @media(min-width: 960px)
+      width: 74.59678%
+
+h1 + .page-columns
+  margin-top: 20px
