@@ -69,7 +69,6 @@
 
 .jp-play.pause {
   background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='2' height='10' rx='1' fill='%23A0A5C0'/%3E%3Crect x='6' width='2' height='10' rx='1' fill='%23A0A5C0'/%3E%3C/svg%3E%0A");
-  margin-right: 20px;
 
   &:hover {
     background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='2' height='10' rx='1' fill='%2324BDFF'/%3E%3Crect x='6' width='2' height='10' rx='1' fill='%2324BDFF'/%3E%3C/svg%3E%0A");
@@ -128,6 +127,7 @@
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
+  margin-left: 10px;
   padding: 0;
 
   &:focus,
@@ -157,7 +157,8 @@
 }
 @media(min-width: 768px) {
   .jp-details {
-    max-width: 190px;
+    width: 190px;
+    min-width: 190px;
     padding-right: 20px;
   }
 
