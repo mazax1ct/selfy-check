@@ -1,0 +1,232 @@
+.map-block
+  margin-top: 40px
+  margin-bottom: 40px
+
+  @media(min-width: 600px)
+    display: flex
+
+  @media(min-width: 960px)
+    margin-bottom: 80px
+
+  &__map
+    background-color: #fafafa
+    flex-grow: 1
+    height: 400px
+
+  &__list-block
+    background-color: #F7F9FC
+    height: 400px
+    padding-left: 30px
+    padding-right: 20px
+    padding-top: 25px
+    padding-bottom: 25px
+
+    @media(min-width: 600px)
+      min-width: 315px
+      width: 315px
+
+  &__list-block-inner
+    overflow-y: auto
+    height: 350px
+
+    ul
+      font-weight: 500
+      margin: 0
+      padding-right: 10px
+
+      li
+        &:not(:last-child)
+          margin-bottom: 10px
+
+    a
+      color: $no-active
+      text-decoration: none
+
+      &:hover
+        color: $color-blue
+
+.files
+  display: flex
+  flex-wrap: wrap
+  margin-top: 40px
+  margin-bottom: 20px
+  margin-left: -30px
+  margin-right: -30px
+  overflow: hidden
+
+  &__item
+    margin-bottom: 20px
+    max-width: 420px
+    padding-left: 30px
+    padding-right: 30px
+    width: 100%
+
+.file
+  align-items: center
+  color: $text-color
+  display: flex
+  max-width: 360px
+
+  &:hover
+    .file__download
+      color: $color-blue-dark
+      text-decoration: underline
+
+  &__icon
+    height: 50px
+    min-width: 50px
+    width: 50px
+
+    @media(min-width: 768px)
+      height: 100px
+      min-width: 100px
+      width: 100px
+
+  &__info
+    padding-left: 15px
+
+    @media(min-width: 768px)
+      padding-left: 25px
+
+  &__title
+    display: block
+    font-weight: 500
+
+  &__download
+    color: $color-blue
+    font-size: 13px
+    font-weight: 500
+    transition: color 0.3s
+
+.incut-banner
+  background-color: $no-active
+  background-position: 100% 50%
+  background-repeat: no-repeat
+  background-size: cover
+  color: #fff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 400px
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: 25px
+
+  @media(min-width: 960px)
+    margin-top: 80px
+    margin-bottom: 80px
+    padding: 50px
+
+  &__title
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.23809
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      font-size: 28px
+
+    @media(min-width: 960px)
+      font-size: 42px
+
+  &__text
+    font-size: 18px
+    font-weight: 500
+    line-height: 1.41666
+    margin-bottom: 0
+    max-width: 910px
+
+    @media(min-width: 960px)
+      font-size: 24px
+
+.docs
+  display: flex
+  flex-wrap: wrap
+  margin-top: 40px
+  margin-bottom: 20px
+  margin-left: -26px
+  margin-right: -26px
+  overflow: hidden
+
+  &__item
+    margin-bottom: 20px
+    max-width: 312px
+    padding-left: 26px
+    padding-right: 26px
+    width: 100%
+
+.doc
+  color: $text-color
+  display: block
+  max-width: 260px
+
+  @media(max-width: 590px)
+    align-items: center
+    display: flex
+
+  &:hover
+    .doc__download
+      color: $color-blue-dark
+      text-decoration: underline
+
+  &__icon
+    height: 94px
+    margin-bottom: 10px
+    width: 66px
+
+    @media(max-width: 590px)
+      margin-bottom: 0
+
+    @media(min-width: 960px)
+      margin-bottom: 20px
+
+  &__info
+    @media(max-width: 590px)
+      padding-left: 10px
+
+  &__title
+    display: block
+    font-weight: 500
+
+  &__download
+    color: $color-blue
+    font-size: 13px
+    font-weight: 500
+    transition: color 0.3s
+
+.question-block
+  background-color: #F7F9FC
+  margin-bottom: -40px
+  margin-top: 40px
+  padding-top: 35px
+  padding-bottom: 35px
+
+  @media(min-width: 960px)
+    margin-bottom: -80px
+    margin-top: 80px
+
+  &__inner
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  &__title
+    font-size: 18px
+    font-weight: 500
+    line-height: 1.41666
+    margin-bottom: 10px
+    margin-top: 10px
+    margin-left: 30px
+    margin-right: 30px
+
+    @media(min-width: 960px)
+      font-size: 24px
+
+  &__button
+    margin-bottom: 10px
+    margin-top: 10px
+    margin-left: 30px
+    margin-right: 30px
+    max-width: 315px
+    width: 100%

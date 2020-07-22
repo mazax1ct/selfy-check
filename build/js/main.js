@@ -8,11 +8,21 @@ var resize_scroll = function(e) {
   }
 };
 
-tippy('[data-tippy-content]', {
+tippy('.js-tippy-1', {
+  allowHTML: true,
   theme: 'white',
   maxWidth: 275,
   placement: 'top-start',
   trigger: 'mouseenter click',
+  zIndex: 1
+});
+
+tippy('.js-tippy-2', {
+  allowHTML: true,
+  theme: 'white',
+  maxWidth: 345,
+  placement: 'top',
+  trigger: 'mouseenter',
   zIndex: 1
 });
 
@@ -54,12 +64,17 @@ $(document).ready(function () {
 
   //плавный скролл к якорю при загрузке страницы
   var myHash = location.hash;
-  location.hash = '';
+  //location.hash = '';
   if(myHash[1] != undefined) {
     $('html, body').animate({
       scrollTop: $(myHash).offset().top - 90
     }, 700);
   };
+
+  //кастомный скролл
+  $('.js-custom-scroll').each(function(index, element) {
+    new SimpleBar(element, { autoHide: false })
+  });
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
