@@ -1,0 +1,96 @@
+.steps
+  margin-top: 40px
+  margin-bottom: 20px
+
+  & + h2,
+  & + .h2
+    @media(min-width: 960px)
+      margin-top: 40px
+
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+
+  @media(min-width: 960px)
+    margin-bottom: 40px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 600px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%
+
+    @media(min-width: 960px)
+      margin-bottom: 40px
+      width: 33.33333%
+
+.step
+  &__image-block
+    align-items: center
+    background-image: url("data:image/svg+xml,%3Csvg width='241' height='130' viewBox='0 0 241 130' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0H196.412C199.885 0 203.109 1.80155 204.929 4.75903L238.775 59.759C240.753 62.9731 240.753 67.0269 238.775 70.241L204.929 125.241C203.109 128.198 199.885 130 196.412 130H10C4.47715 130 0 125.523 0 120V10Z' fill='%23F7F9FC'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 0 0
+    display: flex
+    height: 130px
+    justify-content: center
+    margin-bottom: 10px
+    position: relative
+    width: 242px
+
+    @media(min-width: 960px)
+      margin-bottom: 20px
+
+    img
+      flex-shrink: 0
+
+  &__num
+    align-items: center
+    background-color: $color-blue
+    border-radius: 50%
+    color: #fff
+    display: flex
+    font-size: 14px
+    font-weight: 700
+    height: 24px
+    justify-content: center
+    left: 20px
+    position: absolute
+    top: 20px
+    width: 24px
+
+.install
+  @media(min-width: 960px)
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+  &:not(:last-child)
+    margin-bottom: 30px
+
+    @media(min-width: 960px)
+      margin-bottom: 60px
+
+  &__image
+    margin-bottom: 20px
+    max-width: 505px
+
+    @media(min-width: 960px)
+      margin-bottom: 0
+      width: 35%
+
+    @media(min-width: 1200px)
+      width: 50%
+
+  &__text
+    max-width: 620px
+
+    @media(min-width: 960px)
+      padding-left: 10px
+      width: 60%
+
+    @media(min-width: 1200px)
+      width: 50%

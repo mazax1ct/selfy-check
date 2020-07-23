@@ -163,7 +163,31 @@
       <div class="question-block">
         <div class="question-block__inner container">
           <p class="question-block__title">Задайте нам вопрос</p>
-          <button class="question-block__button button" type="button">СПРОСИТЬ</button>
+          <button class="question-block__button button" type="button" data-fancybox="question_popup" data-src="#question_popup">СПРОСИТЬ</button>
+          <div id="question_popup" class="popup">
+            <p class="popup__title">Задайте нам вопрос</p>
+            <p class="popup__terms">Заполняя данную форму, Вы соглашаетесь с <a href="#">политикой конфиденциальности и пользовательским соглашением</a>.</p>
+            <form action="">
+              <label class="input-label">
+                <span class="input-label__text">Имя</span>
+                <input class="input error" name="user_name" type="text" value="">
+              </label>
+              <label class="input-label">
+                <span class="input-label__text">Электронная почта</span>
+                <input class="input" name="user_email" type="text" value="">
+              </label>
+              <label class="input-label">
+                <span class="input-label__text">Телефон</span>
+                <input class="input" name="user_phone" type="text" value="">
+              </label>
+              <label class="input-label">
+                <span class="input-label__text">Вопрос</span>
+                <textarea class="textarea" name="user_question"></textarea>
+              </label>
+              <div class="popup__capcha"><img src="images/content/img_54.jpg" alt=""></div>
+              <button class="popup__button button" type="submit">ОТПРАВИТЬ</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

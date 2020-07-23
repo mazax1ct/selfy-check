@@ -1,3 +1,5 @@
+$.fancybox.defaults.hash = false;
+
 //функция навешивания класса на шапку
 var resize_scroll = function(e) {
   var h = $(".header");
@@ -64,11 +66,12 @@ $(document).ready(function () {
 
   //плавный скролл к якорю при загрузке страницы
   var myHash = location.hash;
-  //location.hash = '';
+  location.hash = '';
   if(myHash[1] != undefined) {
     $('html, body').animate({
       scrollTop: $(myHash).offset().top - 90
     }, 700);
+    location.hash = myHash;
   };
 
   //кастомный скролл
