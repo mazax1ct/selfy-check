@@ -124,6 +124,11 @@ ol
       &:not(:last-child)
         margin-bottom: 5px
 
+      &.mb-12-30
+        &:not(:last-child)
+          @media(min-width: 960px)
+            margin-bottom: 30px
+
 ul
   &:not([class]),
   &.list
@@ -393,7 +398,7 @@ img
   background-position: 0 0.5em
   background-repeat: no-repeat
   margin-bottom: 10px
-  padding-left: 25px
+  padding-left: 20px
 
 .button-link
   border: none
@@ -609,3 +614,37 @@ a.overlayed-image
     height: 84px
     margin-bottom: 30px
     width: 84px
+
+.numbered-paragraph
+  align-items: center
+  display: flex
+  font-size: 18px
+  font-weight: 500
+  line-height: 1.41666
+  margin-bottom: 30px
+
+  @media(min-width: 960px)
+    font-size: 24px
+
+  &__num
+    align-items: center
+    background-color: #F7F9FC
+    border-radius: 50%
+    color: $color-blue
+    display: flex
+    font-size: 18px
+    font-weight: 700
+    height: 40px
+    justify-content: center
+    min-width: 40px
+    margin-right: 10px
+    width: 40px
+
+    @media(min-width: 1240px)
+      font-size: 32px
+      height: 84px
+      margin-right: 20px
+      width: 84px
+
+.object-fit
+  object-fit: cover

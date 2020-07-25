@@ -1,0 +1,126 @@
+.reviews
+  display: flex
+  flex-wrap: wrap
+  margin-left: -10px
+  margin-right: -10px
+
+  &__item
+    padding-left: 10px
+    padding-right: 10px
+    width: 100%
+
+    @media(min-width: 768px)
+      width: 50%
+
+    @media(min-width: 1240px)
+      width: 33.33333%
+
+  .slick-dots
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    list-style: none
+    margin-top: 15px
+    width: 100%
+
+    li
+      width: 30px
+
+      button
+        align-items: center
+        background-color: transparent
+        border: none
+        cursor: pointer
+        display: flex
+        font-size: 0
+        height: 30px
+        justify-content: center
+        overflow: hidden
+        position: relative
+        text-indent: -10000px
+        width: 30px
+
+        &::after
+          background-color: $no-active
+          border-radius: 50%
+          content: ''
+          display: block
+          height: 4px
+          width: 4px
+
+      &.slick-active
+        button
+          &::after
+            background-color: $color-blue
+
+  .slick-arrow
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 48px
+    justify-content: center
+    padding: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 48px
+    z-index: 1
+
+  .slick-arrow__icon
+    fill: $no-active
+    height: 24px
+    width: 24px
+
+  .slick-next
+    left: auto
+    right: 0
+
+    @media(min-width: 1400px)
+      right: -70px
+
+  .slick-prev
+    left: 0
+
+    @media(min-width: 1400px)
+      left: -70px
+
+.review
+  background-color: #F7F9FC
+  max-width: 400px
+  margin-left: auto
+  margin-right: auto
+  padding: 25px 20px
+
+  @media(min-width: 768px)
+    padding: 40px 40px 50px
+
+  &__author
+    align-items: center
+    display: flex
+    margin-bottom: 25px
+
+    @media(min-width: 768px)
+      margin-bottom: 40px
+
+  &__author-avatar
+    border: 2px solid $color-blue
+    border-radius: 50%
+    min-width: 60px
+    margin-right: 15px
+    overflow: hidden
+    width: 60px
+
+    @media(min-width: 768px)
+      min-width: 120px
+      margin-right: 30px
+      width: 120px
+
+  &__author-name
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.4
+
+    @media(min-width: 768px)
+      font-size: 20px
