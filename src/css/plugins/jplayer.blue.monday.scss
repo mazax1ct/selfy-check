@@ -133,6 +133,7 @@
   &:focus,
   &:hover {
     background-color: darken(#F0F2F5, 5%);
+    color: $color-blue;
   }
 }
 
