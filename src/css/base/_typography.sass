@@ -648,3 +648,120 @@ a.overlayed-image
 
 .object-fit
   object-fit: cover
+
+.checked-paragraph
+  align-items: center
+  display: flex
+  font-size: 24px
+  font-weight: 700
+  line-height: 1.23809
+  margin-bottom: 10px
+
+  @media(min-width: 768px)
+    font-size: 28px
+
+  @media(min-width: 960px)
+    font-size: 42px
+
+  &::before
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='49' viewBox='0 0 50 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 0.000488281C20.0555 0.000488281 15.222 1.43464 11.1108 4.12159C6.99953 6.80853 3.79521 10.6276 1.90302 15.0958C0.0108321 19.5641 -0.484251 24.4808 0.480379 29.2242C1.44501 33.9677 3.82603 38.3248 7.32234 41.7446C10.8187 45.1645 15.2732 47.4934 20.1228 48.4369C24.9723 49.3805 29.9989 48.8962 34.5671 47.0454C39.1352 45.1946 43.0397 42.0604 45.7867 38.0391C48.5338 34.0178 50 29.29 50 24.4536C50 21.2424 49.3534 18.0626 48.097 15.0958C46.8406 12.129 44.9991 9.43333 42.6777 7.16265C40.3562 4.89196 37.6002 3.09076 34.5671 1.86187C31.534 0.632988 28.2831 0.000488281 25 0.000488281ZM35.75 18.6093L24.325 33.2812C24.0921 33.5771 23.793 33.817 23.4507 33.9823C23.1083 34.1476 22.7318 34.234 22.35 34.2349C21.9703 34.2369 21.5951 34.1543 21.2529 33.9933C20.9107 33.8322 20.6104 33.5971 20.375 33.3057L14.275 25.7007C14.0731 25.4471 13.9243 25.157 13.837 24.847C13.7497 24.5371 13.7257 24.2133 13.7663 23.8943C13.8069 23.5753 13.9114 23.2672 14.0737 22.9876C14.2361 22.7081 14.4531 22.4626 14.7125 22.2651C15.2363 21.8662 15.9006 21.6872 16.5594 21.7675C16.8855 21.8072 17.2005 21.9094 17.4863 22.0682C17.7721 22.227 18.0231 22.4393 18.225 22.693L22.3 27.7793L31.75 15.5527C31.9503 15.2958 32.2003 15.08 32.4858 14.9176C32.7714 14.7552 33.0868 14.6494 33.4141 14.6063C33.7415 14.5632 34.0743 14.5835 34.3936 14.6662C34.7128 14.7488 35.0124 14.8922 35.275 15.0881C35.5377 15.284 35.7583 15.5285 35.9243 15.8078C36.0903 16.0871 36.1984 16.3956 36.2426 16.7158C36.2867 17.036 36.2659 17.3615 36.1814 17.6738C36.0968 17.9861 35.9503 18.2791 35.75 18.536V18.6093Z' fill='%2324BDFF'/%3E%3C/svg%3E%0A")
+    background-position: 0 0
+    background-repeat: no-repeat
+    content: ''
+    height: 50px
+    display: block
+    min-width: 50px
+    margin-right: 15px
+    width: 50px
+
+    @media(min-width: 960px)
+      margin-right: 30px
+
+.quested-paragraph
+  align-items: center
+  display: flex
+  font-size: 18px
+  font-weight: 500
+  line-height: 1.41666
+  margin-bottom: 10px
+
+  @media(min-width: 960px)
+    font-size: 24px
+    margin-bottom: 30px
+
+  &::before
+    align-items: center
+    background-color: $color-blue
+    border-radius: 50%
+    color: #fff
+    content: '?'
+    display: flex
+    font-size: 30px
+    font-weight: 700
+    height: 40px
+    justify-content: center
+    line-height: 1.12903
+    margin-right: 15px
+    min-width: 40px
+    width: 40px
+
+    @media(min-width: 1240px)
+      font-size: 62px
+      height: 84px
+      margin-right: 30px
+      min-width: 84px
+      width: 84px
+
+.flock
+  background-color: #F7F9FC
+  padding: 20px
+
+  @media(min-width: 960px)
+    padding: 40px
+
+.numbered-paragraph2
+  padding-left: 40px
+  position: relative
+
+  @media(min-width: 960px)
+    line-height: 24px
+    margin-bottom: 12px
+
+  &__num
+    align-items: center
+    border: 1px solid rgba($text-color, 0.3)
+    border-radius: 50%
+    display: flex
+    font-size: 14px
+    font-weight: 700
+    height: 24px
+    justify-content: center
+    left: 0
+    position: absolute
+    top: 0
+    width: 24px
+
+.attention-paragraph
+  color: $color-red
+  font-weight: 500
+  padding-left: 40px
+  position: relative
+
+  @media(min-width: 960px)
+    line-height: 24px
+    margin-bottom: 12px
+
+  &::before
+    align-items: center
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 17C11.8022 17 11.6089 16.9414 11.4444 16.8315C11.28 16.7216 11.1518 16.5654 11.0761 16.3827C11.0004 16.2 10.9806 15.9989 11.0192 15.8049C11.0578 15.6109 11.153 15.4327 11.2929 15.2929C11.4328 15.153 11.6109 15.0578 11.8049 15.0192C11.9989 14.9806 12.2 15.0004 12.3827 15.0761C12.5654 15.1518 12.7216 15.28 12.8315 15.4444C12.9414 15.6089 13 15.8022 13 16C13 16.2652 12.8946 16.5196 12.7071 16.7071C12.5196 16.8946 12.2652 17 12 17ZM13 13C13 13.2652 12.8946 13.5196 12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071C11.1054 13.5196 11 13.2652 11 13V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V13Z' fill='%23F91A2B'/%3E%3C/svg%3E%0A")
+    background-position: 0 0
+    background-repeat: no-repeat
+    border-radius: 50%
+    content: ''
+    display: flex
+    height: 24px
+    justify-content: center
+    left: 0
+    position: absolute
+    top: 0
+    width: 24px

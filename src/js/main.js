@@ -1,3 +1,4 @@
+//переопределение дефолтных настроек fancybox
 $.fancybox.defaults.hash = false;
 
 //функция навешивания класса на шапку
@@ -78,7 +79,6 @@ $(document).ready(function () {
   $('.js-custom-scroll').each(function(index, element) {
     new SimpleBar(element, { autoHide: false })
   });
-
 
   //слайдер отзывов
   if($('.js-reviews').length) {
