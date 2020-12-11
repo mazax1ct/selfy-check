@@ -186,3 +186,11 @@ $(document).on('click', '.js-anchor-link', function () {
   }, 500);
   return false;
 });
+
+$(document).on('focus', '.input, .textarea', function () {
+  $(this).parent('.input-label').addClass('focused');
+});
+
+$(document).on('blur', '.input, .textarea', function () {
+  $(this).parent('.input-label').removeClass('focused');
+});

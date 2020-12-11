@@ -1,0 +1,44 @@
+.personal-menu
+  display: inline-block
+  list-style: none
+  margin: 0
+  padding: 0
+  vertical-align: top
+
+  &__item
+
+  &__link
+    align-items: center
+    border-radius: 20px
+    color: $no-active
+    display: flex
+    font-weight: 500
+    padding: 15px 27px 15px 18px
+    transition: background-color 0.3s, color 0.3s
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: $text-color
+
+      .personal-menu__icon
+        fill: $text-color
+
+    &.is-active
+      background-color: $no-active
+      color: #fff
+
+      &:hover,
+      &:focus
+        .personal-menu__icon
+          fill: #fff
+
+      .personal-menu__icon
+        fill: #fff
+
+  &__icon
+    fill: $no-active
+    height: 24px
+    margin-right: 15px
+    transition: fill 0.3s
+    width: 24px

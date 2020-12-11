@@ -1,28 +1,65 @@
 .input-label
   display: block
-  margin-bottom: 20px
+  padding-bottom: 25px
+  position: relative
+
+  &.focused
+    .input-label__text
+      color: $text-color
+
+  &__wrap
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+    a
+      color: $no-active
+      font-size: 13px
+      font-weight: 500
+      line-height: 20px
+      margin-bottom: 8px
+      text-decoration: underline
+
+      &:hover
+        color: $text-color-light
 
   &__text
     color: $no-active
     display: block
     font-size: 13px
-    font-weight: 500
-    line-height: 1
-    margin-bottom: 10px
+    line-height: 20px
+    margin-bottom: 8px
+    transition: color 0.3s
+
+  &__error
+    bottom: 0
+    color: $color-red
+    display: block
+    font-size: 13px
+    left: 0
+    line-height: 20px
+    position: absolute
+    top: auto
+    width: 100%
+
+  .input-label
+    padding-bottom: 0
 
 .input,
 .textarea
-  background-color: #fff
-  border: 1px solid #8F95B2
-  border-radius: 4px
+  background-color: #F7F9FC
+  border: 1px solid #F7F9FC
+  border-radius: 20px
   color: $text-color
   font-size: 15px
   font-weight: 500
   line-height: 17px
+  transition: border-color 0.3s
   width: 100%
 
   &:focus
     border-color: $color-blue
+    outline: none
 
   &.error
     border-color: $color-red
@@ -34,8 +71,8 @@
     opacity: 0.5
 
 .input
-  height: 40px
-  padding: 11px 10px
+  height: 60px
+  padding: 21px 20px
 
 .textarea
   height: 140px

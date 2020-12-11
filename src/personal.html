@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Selfy Check - Личный кабинет - Личные данные</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header-auth.html
+
+  <div class="wrapper">
+    <div class="page-content">
+
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Личный кабинет</li>
+        </ol>
+        <div class="page-columns">
+          <div class="page-columns__left page-columns__left--personal">
+            //= template/personal-menu.html
+          </div>
+          <div class="page-columns__right">
+            <h1 class="h2 mb-12-30">Личные данные</h1>
+            <div class="personal">
+              <form action="">
+                <div class="personal__section">
+                  <div class="personal__block">
+                    <label class="input-label">
+                      <span class="input-label__text">Фамилия <span>*</span></span>
+                      <input class="input" name="user_lastname" type="text" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Имя <span>*</span></span>
+                      <input class="input" name="user_name" type="text" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Отчество <span class="color-red">*</span></span>
+                      <input class="input error" name="user_secondname" type="text" value="">
+                      <span class="input-label__error">Объязательное поле</span>
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Тип диабета</span>
+                      <input class="input" name="user_type" type="text" value="">
+                    </label>
+                  </div>
+                  <div class="personal__block">
+                    <label class="input-label datepicker-container">
+                      <span class="input-label__text">Дата рождения</span>
+                      <input class="datepicker-here input" name="user_birth" type="text" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Email <span>*</span></span>
+                      <input class="input" name="user_email" type="text" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Телефон <span>*</span></span>
+                      <input class="input" name="user_phone" type="text" value="">
+                    </label>
+                  </div>
+                </div>
+                <hr>
+                <div class="personal__section">
+                  <div class="personal__block">
+                    <h2 class="h3">Адрес</h2>
+                    <label class="input-label">
+                      <span class="input-label__text">Город <span>*</span></span>
+                      <input class="input" name="user_city" type="text" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Улица <span>*</span></span>
+                      <input class="input" name="user_street" type="text" value="">
+                    </label>
+                    <div class="input-label">
+                      <div class="row">
+                        <div class="col-4">
+                          <label class="input-label">
+                            <span class="input-label__text">Дом <span class="color-red">*</span></span>
+                            <input class="input text-center error" name="user_bld" type="text" value="">
+                          </label>
+                        </div>
+                        <div class="col-4">
+                          <label class="input-label">
+                            <span class="input-label__text">Корпус</span>
+                            <input class="input text-center" name="user_corp" type="text" value="">
+                          </label>
+                        </div>
+                        <div class="col-4">
+                          <label class="input-label">
+                            <span class="input-label__text">Квартира <span>*</span></span>
+                            <input class="input text-center" name="user_apt" type="text" value="">
+                          </label>
+                        </div>
+                      </div>
+                      <span class="input-label__error">Объязательное поле</span>
+                    </div>
+
+                  </div>
+                  <div class="personal__block">
+                    <h2 class="h3">Смена пароля</h2>
+                    <label class="input-label">
+                      <span class="input-label__wrap">
+                        <span class="input-label__text">Старый пароль</span>
+                        <a href="#">Забыли пароль?</a>
+                      </span>
+                      <input class="input" name="user_oldpass" type="password" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Новый пароль</span>
+                      <input class="input" name="user_pass" type="password" value="">
+                    </label>
+                    <label class="input-label">
+                      <span class="input-label__text">Новый пароль ещё раз</span>
+                      <input class="input" name="user_repass" type="password" value="">
+                    </label>
+                  </div>
+                </div>
+                <button class="personal__submit button" type="submit">сохранить изменения</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/go-top.html
+
+  //= template/scripts.html
+  <script src="js/datepicker.min.js"></script>
+</body>
+
+</html>

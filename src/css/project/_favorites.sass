@@ -1,0 +1,41 @@
+.favorite-item
+  margin-bottom: 30px
+
+  &:hover
+    .favorite-item__link
+      img
+        transform: scale(1.02)
+
+  &__link
+    display: block
+    overflow: hidden
+    margin-bottom: 15px
+
+    img
+      transform: scale(1)
+      transition: transform 0.3s
+
+  &__fav-button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: 20px
+    position: absolute
+    padding: 0
+    top: 10px
+    width: 40px
+    z-index: 2
+
+  &__fav-icon
+    fill: #fff
+    height: 24px
+    stroke: #fff
+    transition: fill 0.3s
+    width: 24px
+
+  .video
+    padding-bottom: 62.375%
