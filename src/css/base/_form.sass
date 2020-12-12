@@ -1,0 +1,72 @@
+.form
+  border-radius: 30px
+  border: 1px solid #EBECF0
+  max-width: 400px
+  margin-left: auto
+  margin-right: auto
+  padding: 33px 40px 43px
+
+  &__title
+    font-size: 18px
+    font-weight: 500
+    line-height: 1.41666
+    margin-bottom: 20px
+
+    @media(min-width: 960px)
+      font-size: 24px
+
+  &__text
+    color: #7A7F99
+
+  &__capcha
+    margin-top: 25px
+    margin-bottom: 25px
+
+  &__button
+    margin-top: 15px
+    width: 100%
+
+  &__note
+    color: $no-active
+    font-size: 13px
+    margin-top: 15px
+    text-align: center
+
+    a
+      color: inherit
+      font-weight: 500
+      text-decoration: underline
+
+      &:hover
+        color: $text-color
+
+.social-auth
+  align-items: center
+  display: flex
+  margin-left: -5px
+  margin-right: -5px
+  margin-bottom: 35px
+
+  &__link
+    align-items: center
+    border-radius: 14px
+    display: flex
+    justify-content: center
+    height: 45px
+    margin-left: 5px
+    margin-right: 5px
+    width: calc(33.33333% - 10px)
+
+    &--type_1
+      background-color: #F14336
+
+    &--type_2
+      background-color: #436EAB
+
+    &--type_3
+      background-color: #2C4087
+
+  &__link-icon
+    fill: #fff
+    height: 20px
+    width: 20px

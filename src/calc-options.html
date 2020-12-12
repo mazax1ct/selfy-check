@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Selfy Check - Личный кабинет - Настройки калькулятора расчета доз</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header-auth.html
+
+  <div class="wrapper">
+    <div class="page-content">
+
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Личный кабинет</li>
+        </ol>
+        <div class="page-columns">
+          <div class="page-columns__left page-columns__left--personal">
+            //= template/personal-menu.html
+          </div>
+          <div class="page-columns__right">
+            <h1 class="h2 mb-12-30">Настройки калькулятора расчета доз</h1>
+            <div class="calc-options">
+              <form action="">
+                <div class="calc-options__item">
+                  <input class="input" type="text">
+                  <div>
+                    <p><b>Углеводный Коэффициент</b></p>
+                    <p class="small-text">Количество инсулина, покрывающее 1 хлебную единицу (1 ХЕ)</p>
+                  </div>
+                </div>
+                <div class="calc-options__item">
+                  <input class="input" type="text">
+                  <div>
+                    <p><b>Коэффициент Чувствительности (фактор чувств. ФЧ)</b></p>
+                    <p class="small-text">Насколько снизится сахар крови (в ммолях) при введении 1 ед.<br> короткого или ультракороткого инсулина</p>
+                  </div>
+                </div>
+                <div class="calc-options__item">
+                  <input class="input" type="text">
+                  <div>
+                    <p><b>Активный Инсулин</b></p>
+                    <p class="small-text">Промежуток времени, в течение которого инсулин<br> снижает уровень глюкозы</p>
+                  </div>
+                </div>
+                <div class="calc-options__item">
+                  <input class="input" type="text">
+                  <div>
+                    <p><b>Целевой Показатель</b></p>
+                    <p class="small-text">Целевой уровень сахара крови (рекомендует врач)</p>
+                  </div>
+                </div>
+                <button class="calc-options__button button" type="button">СОХРАНИТЬ</button>
+              </form>
+            </div>
+            <div class="calc">
+              <div class="form">
+                <div class="calc__top">
+                  <div class="calc__row">
+                    <p class="calc__row-title">Текущий уровень глюкозы:</p>
+                    <div class="calc__input-wrap">
+                      <input class="input" type="text" value="">
+                      <span class="calc__units">мг/дл</span>
+                      <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
+                        <svg class="info__icon" aria-hidden="true">
+                          <use xlink:href="#question" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="calc__row">
+                    <p class="calc__row-title">Планируемое потребление<br> хлебных единиц:</p>
+                    <div class="calc__input-wrap">
+                      <input class="input" type="text" value="">
+                      <span class="calc__units">ед.</span>
+                      <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
+                        <svg class="info__icon" aria-hidden="true">
+                          <use xlink:href="#question" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="calc__button button" type="button">РАССЧИТАТЬ</button>
+                </div>
+                <div class="calc__bottom">
+                  <div class="calc__row">
+                    <p class="calc__row-title">Расчетная доза инсулина:</p>
+                    <div class="calc__input-wrap">
+                      <input class="input" type="text" value="" readonly>
+                      <span class="calc__units">ед.</span>
+                      <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
+                        <svg class="info__icon" aria-hidden="true">
+                          <use xlink:href="#question" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="color-grey bolder" style="max-width: 640px">При использовании калькулятора рассчета доз обязательно проконсультируйтесь с врачом (специалистом) по индивидуальным расчетным коэффициентам. Вводите значения, собюлюдая разделения целой и дробной части числа десятичным разделителем (запятой).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/go-top.html
+
+  //= template/scripts.html
+  <script src="js/datepicker.min.js"></script>
+</body>
+
+</html>

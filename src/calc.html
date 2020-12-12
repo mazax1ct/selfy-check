@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Selfy Check - Калькулятор расчета доз</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header-auth.html
+
+  <div class="wrapper">
+    <div class="page-content">
+
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Калькулятор расчета доз</li>
+        </ol>
+        <h1 class="h2 mb-12-30 text-center">Калькулятор расчета доз</h1>
+        <div class="calc-wrap">
+          <div class="calc">
+            <form action="">
+              <div class="calc__top">
+                <div class="calc__row">
+                  <p class="calc__row-title">Текущий уровень глюкозы:</p>
+                  <div class="calc__input-wrap">
+                    <input class="input" type="text" value="">
+                    <span class="calc__units">мг/дл</span>
+                    <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
+                      <svg class="info__icon" aria-hidden="true">
+                        <use xlink:href="#question" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="calc__row">
+                  <p class="calc__row-title">Планируемое потребление<br> хлебных единиц:</p>
+                  <div class="calc__input-wrap">
+                    <input class="input" type="text" value="">
+                    <span class="calc__units">ед.</span>
+                    <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
+                      <svg class="info__icon" aria-hidden="true">
+                        <use xlink:href="#question" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <button class="calc__button button" type="button">РАССЧИТАТЬ</button>
+              </div>
+              <div class="calc__bottom">
+                <div class="calc__row">
+                  <p class="calc__row-title">Расчетная доза инсулина:</p>
+                  <div class="calc__input-wrap">
+                    <input class="input" type="text" value="" readonly>
+                    <span class="calc__units">ед.</span>
+                    <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
+                      <svg class="info__icon" aria-hidden="true">
+                        <use xlink:href="#question" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <p class="color-grey bolder">При использовании калькулятора рассчета доз обязательно проконсультируйтесь с врачом (специалистом) по индивидуальным расчетным коэффициентам. Вводите значения, собюлюдая разделения целой и дробной части числа десятичным разделителем (запятой).</p>
+          <p class="color-orange bolder">ООО «ГЕРОФАРМ» не оказывает медицинские услуги посредством веб&nbsp;сайта&nbsp;selfycheck.ru</p>
+          <p>Содержание веб сайта selfycheck.ru, такое как текст, графические изображения, иные материалы и инструменты (далее – Контент) представлено исключительно в информационно-справочных целях. Контент веб сайта, ни при каких условиях, не может трактоваться как медицинские заключения, диагностические или лечебные рекомендации. Контент содержащийся на этом веб сайте не может быть использован как основание для диагностики, назначения лечения и/или лекарственных средств. В случае обоснованных подозрений о наличии каких-либо заболеваний, просим вас обратиться к врачу (специалисту).</p>
+          <p class="bolder">Ежедневное использование калькулятора расчёта доз - это:</p>
+          <ul class="list">
+            <li>Быстрый и более точный расчет дозы инсулина</li>
+            <li>Учет инсулина в организме (активный инсулин)</li>
+            <li>Снижение риска накоплением инсулина в организме</li>
+            <li>Позволяет избежать появление осложнений (гипо-, гипергликемии)</li>
+            <li>Учет индивидуальных показателей</li>
+          </ul>
+          <p>Ежедневное использование «Калькулятор расчета доз», может значительно облегчить задачу расчета болюсного инсулина на прием пищи и снижение высокого сахара. Калькулятор расчета доз помогает более точно рассчитать болюсную дозу инсулина (на еду или коррекцию высокого сахара) индивидуально для каждого человека, используя персональные данные, такие как: коэффициент углеводов, фактор чувствительности к инсулину, целевые показатели глюкозы в крови в разное время в течение суток, а так же учитывает коэффициент активного инсулина, то есть тот инсулин, который еще находится и работает в организме. Эта функция помогает предотвратить такое осложнение, как гипогликемию.</p>
+          <p>Все, что необходимо сделать для расчета дозы, - это ввести в калькулятор количество предполагаемых углеводов на еду и текущие показатели глюкозы в крови.</p>
+          <p class="color-orange bolder">ОБЯЗАТЕЛЬНО ПРОКОНСУЛЬТИРУЙТЕСЬ С ВРАЧОМ (СПЕЦИАЛИСТОМ)!</p>
+          <p>Для того, чтобы использовать калькулятор расчета доз Вам необходимо знать и ввести в настройках следующие параметры:
+Углеводный коэффициент (УК) - это количество инсулина, покрывающее 1 хлебную единицу - ХЕ (для тех, кто считает углеводы в ХЕ), или количество граммов углеводов, которое покрывается 1 ЕД инсулина (для тех, кто считает углеводы в граммах).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/go-top.html
+
+  //= template/scripts.html
+  <script src="js/datepicker.min.js"></script>
+</body>
+
+</html>

@@ -21,6 +21,33 @@
       img
         transform: scale(1.05)
 
+  &--big
+    position: relative
+
+    .article-item__image
+      margin-bottom: 0
+
+      &::before
+        background-color: rgba($text-color, 0.7)
+        content: ''
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+        z-index: 1
+
+    .article-item__title
+      color: #fff
+      left: 0
+      position: absolute
+      padding: 20px
+      top: 50%
+      transform: translateY(-50%)
+      text-align: center
+      width: 100%
+      z-index: 2
+
   &__image
     display: block
     margin-bottom: 20px

@@ -13,7 +13,7 @@
   padding: 11px 14px
   text-decoration: none
   text-align: center
-  transition: background-color 0.3s
+  transition: background-color 0.3s, color 0.3s
   vertical-align: middle
 
   &:hover,
@@ -28,3 +28,18 @@
 
     &:focus
       outline: none
+
+  &--type_2
+    background-color: #F0FAFF
+    color: $color-blue
+
+    &:hover,
+    &:active
+      background-color: $color-blue
+      color: #fff
+
+a
+  &.button
+    align-items: center
+    display: inline-flex
+    justify-content: center

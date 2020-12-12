@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Selfy Check - Регистрация</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="wrapper">
+    <div class="page-content">
+
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ol>
+        <div class="form">
+          <p class="form__title">Регистрация</p>
+          <div class="social-auth">
+            <a class="social-auth__link social-auth__link--type_1" href="#" title="google.com">
+              <svg class="social-auth__link-icon" aria-hidden="true">
+                <use xlink:href="#google" />
+              </svg>
+            </a>
+            <a class="social-auth__link social-auth__link--type_2" href="#" title="vk.com">
+              <svg class="social-auth__link-icon" aria-hidden="true">
+                <use xlink:href="#vk" />
+              </svg>
+            </a>
+            <a class="social-auth__link social-auth__link--type_3" href="#" title="facebook.com">
+              <svg class="social-auth__link-icon" aria-hidden="true">
+                <use xlink:href="#fb" />
+              </svg>
+            </a>
+          </div>
+          <form action="">
+            <label class="input-label">
+              <span class="input-label__text">Имя (Username) <span>*</span></span>
+              <input class="input" name="username" type="text" value="">
+            </label>
+            <label class="input-label">
+              <span class="input-label__text">Email <span>*</span></span>
+              <input class="input" name="email" type="text" value="">
+            </label>
+            <label class="input-label">
+              <span class="input-label__text">Пароль <span>*</span></span>
+              <input class="input" name="pass" type="password" value="">
+            </label>
+            <label class="input-label">
+              <span class="input-label__text">Повторите пароль <span>*</span></span>
+              <input class="input" name="repass" type="password" value="">
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" value="">
+              <span class="checkbox-icon"></span>
+              Я согласен на передачу личных данных
+            </label>
+            <div class="form__capcha"><img src="images/content/img_72.jpg" alt=""></div>
+            <button class="form__button button" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </form>
+          <p class="form__note">У вас уже есть аккаунт? <a href="auth.html">Войти</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/go-top.html
+
+  //= template/scripts.html
+</body>
+
+</html>

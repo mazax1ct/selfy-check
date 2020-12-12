@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Selfy Check - Личный кабинет - Мои документы</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header-auth.html
+
+  <div class="wrapper">
+    <div class="page-content">
+
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Личный кабинет</li>
+        </ol>
+        <div class="page-columns">
+          <div class="page-columns__left page-columns__left--personal">
+            //= template/personal-menu.html
+          </div>
+          <div class="page-columns__right">
+            <h1 class="h2 mb-12-30">Мои документы</h1>
+            <p class="h3">Загрузить файл</p>
+            <label class="dropzone">
+              <span class="dropzone__inner">
+                <img src="images/icons/file.svg" alt="">
+                <span class="dropzone__text"><span class="dropzone__pseudo-link">Выберите файл</span> или перетащите&nbsp;его&nbsp;сюда</span>
+              </span>
+            </label>
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Название документа.jpg</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Название документа.doc</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Длинное название документа в две строки.png</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Название документа.jpg</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Название документа.jpg</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Название документа.doc</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Длинное название документа в две строки.png</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3">
+                <a class="document" href="#" target="_blank">
+                  <span class="document__image"><img src="images/content/img_78.jpg" alt="alt"></span>
+                  <span class="document__title">Название документа.jpg</span>
+                </a>
+              </div>
+            </div>
+            <div class="more-block">
+              <a class="small-link color-blue" href="#">
+                <span class="small-link__text">ЗАГРУЗИТЬ еще</span>
+                <span class="small-link__icon">
+                  <svg class="small-link__arrow" aria-hidden="true">
+                    <use xlink:href="#big-link" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/go-top.html
+
+  //= template/scripts.html
+  <script src="js/datepicker.min.js"></script>
+</body>
+
+</html>

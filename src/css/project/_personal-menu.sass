@@ -1,9 +1,70 @@
+.pmenu-toggler
+  align-items: center
+  border: none
+  border-radius: 20px
+  background-color: $no-active
+  color: #fff
+  cursor: pointer
+  display: flex
+  font-weight: 500
+  height: 55px
+  margin-bottom: 30px
+  padding: 15px 18px
+  width: 220px
+
+  @media(min-width: 960px)
+    display: none
+
+  &.is-active
+    .pmenu-toggler__icon
+      transform: rotate(45deg)
+
+      &::before
+        top: 0
+        transform: rotate(-90deg)
+
+      &::after
+        display: none
+
+  &__icon
+    border-radius: 2px
+    background-color: #fff
+    display: block
+    height: 2px
+    margin-right: 15px
+    position: relative
+    width: 24px
+
+    &::after,
+    &::before
+      background-color: #fff
+      border-radius: 2px
+      content: ''
+      height: 2px
+      left: 0
+      position: absolute
+      width: 100%
+      z-index: 1
+
+    &::before
+      top: -8px
+
+    &::after
+      top: 8px
+
 .personal-menu
-  display: inline-block
+  display: none
   list-style: none
   margin: 0
+  min-width: 220px
   padding: 0
   vertical-align: top
+
+  @media(min-width: 960px)
+    display: inline-block
+
+  &.is-open
+    display: inline-block
 
   &__item
 

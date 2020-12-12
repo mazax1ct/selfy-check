@@ -187,10 +187,36 @@ $(document).on('click', '.js-anchor-link', function () {
   return false;
 });
 
+//подсветка лейблов при фокусе полей ввода
 $(document).on('focus', '.input, .textarea', function () {
   $(this).parent('.input-label').addClass('focused');
 });
 
 $(document).on('blur', '.input, .textarea', function () {
   $(this).parent('.input-label').removeClass('focused');
+});
+
+//открытие/закрытие левого меню в личном кабинете
+$(document).on('click', '.js-pmenu-toggler', function () {
+  $(this).toggleClass('is-active');
+  $('.personal-menu').toggleClass('is-open');
+  return false;
+});
+
+//показать/скрыть пароль
+$(document).on('click', '.js-show-pass', function () {
+  if($(this).parent().find('input').attr('type') == 'password') {
+    $(this).parent().find('input').attr('type', 'text');
+    $(this).addClass('is-active');
+  } else {
+    $(this).parent().find('input').attr('type', 'password');
+    $(this).removeClass('is-active');
+  }
+  return false;
+});
+
+//очистка поля поиска
+$(document).on('click', '.js-search-clear', function () {
+  $('.search-bar__input').val('');
+  return false;
 });

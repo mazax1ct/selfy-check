@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Selfy Check - Результаты поиска</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="wrapper">
+    <div class="page-content">
+
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Результаты поиска</li>
+        </ol>
+        <h1 class="h2">Результаты поиска</h1>
+        <form class="search-bar" action="search-results.html" method="get">
+          <input class="search-bar__input" name="q" type="text" placeholder="Поиск" value="Врачи">
+          <button class="search-bar__submit" type="submit" title="Поиск">
+            <svg class="search-bar__submit-icon" aria-hidden="true">
+              <use xlink:href="#search" />
+            </svg>
+          </button>
+          <button class="js-search-clear search-bar__clear" type="button" title="Очистить">
+            <svg class="search-bar__clear-icon" aria-hidden="true">
+              <use xlink:href="#close" />
+            </svg>
+          </button>
+        </form>
+        <p class="search-results">Результаты поиска: <b class="color-blue">3</b></p>
+        <article class="search-result">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="search-result__caption"><b>Новостные страницы</b></p>
+              <h2 class="search-result__title h3"><a href="#">ГЕРОФАРМ выступил партнером социальной платформы Фонда Росконгресс – Фонда Инносоциум в рамках всероссийской акции взаимопомощи #МыВместе</a></h2>
+            </div>
+            <div class="col-md-6">
+              <p class="search-result__caption">Описание</p>
+              <p>ГЕРОФАРМ выступил партнером совместной акции #МыВместе, в рамках которой была организована круглосуточная горячая линия по поддержке и координации помощи пожилым людям старше 60 лет и маломобильным гражданам, попавшим в группу риска и находящимся в самоизоляции в период распространения новой коронавирусной инфекции COVID-19.</p>
+            </div>
+          </div>
+        </article>
+        <article class="search-result">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="search-result__caption"><b>Новостные страницы</b></p>
+              <h2 class="search-result__title h3"><a href="#">Анонс мероприятия для пациентов и СМИ "Главное о российском инсулине в вопросах и ответах"</a></h2>
+            </div>
+            <div class="col-md-6">
+              <p class="search-result__caption">Описание</p>
+              <p>16 января 2020 года в 10.00 на площадке информационного агентства ТАСС в г. Москве состоится мероприятие «Главное о российском инсулине в вопросах и ответах».</p>
+            </div>
+          </div>
+        </article>
+        <article class="search-result">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="search-result__caption"><b>Новостные страницы</b></p>
+              <h2 class="search-result__title h3"><a href="#">ГЕРОФАРМ пробежал марафон «Белые ночи» в 5 раз! В этом году – с особым смыслом!</a></h2>
+            </div>
+            <div class="col-md-6">
+              <p class="search-result__caption">Описание</p>
+              <p>30 июня в Санкт-Петербурге состоялся XXX международный марафон «Белые ночи». Команда ГЕРОФАРМ из 111 человек вошла в ТОП-3 по численности более, чем из 60 корпоративных. Сотрудники компании приняли участие в этом мероприятии в пятый раз и наполнили юбилейный праздник бега особым социальным смыслом, наглядно продемонстрировав одну из ценностей ГЕРОФАРМ – #ЗАБОТА. ГЕРОФАРМ внес свой</p>
+            </div>
+          </div>
+        </article>
+        <p class="more-block text-center">
+          <a class="small-link color-blue" href="#">
+            <span class="small-link__text">ЗАГРУЗИТЬ еще</span>
+            <span class="small-link__icon">
+              <svg class="small-link__arrow" aria-hidden="true">
+                <use xlink:href="#big-link"></use>
+              </svg>
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/go-top.html
+
+  //= template/scripts.html
+</body>
+
+</html>

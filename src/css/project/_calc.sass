@@ -1,0 +1,114 @@
+.calc-options
+  max-width: 640px
+
+  &:not(:last-child)
+    margin-bottom: 30px
+
+    @media(min-width: 960px)
+      margin-bottom: 60px
+
+  &__item
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+    p
+      &:not(:last-child)
+        margin-bottom: 5px
+
+  .input
+    margin-right: 20px
+    text-align: center
+    width: 120px
+
+  &__button
+    margin-top: 20px
+    width: 100%
+
+.calc-wrap
+  max-width: 640px
+  margin-left: auto
+  margin-right: auto
+
+.calc
+  border: 1px solid #EDF2FA
+  border-radius: 30px
+  max-width: 640px
+  margin-bottom: 40px
+
+  &__top
+    padding: 30px 20px
+
+    @media(min-width: 650px)
+      padding: 40px 60px
+
+  &__row
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    font-weight: 500
+    justify-content: space-between
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+    .input
+      margin-right: 20px
+      text-align: center
+      width: 100px
+
+  &__row-title
+    margin-bottom: 10px
+
+  &__input-wrap
+    align-items: center
+    display: flex
+    min-width: 230px
+    margin-bottom: 10px
+
+  &__units
+    margin-right: 10px
+
+  &__button
+    margin-top: 20px
+    width: 100%
+
+  &__bottom
+    background-color: #EDF2FA
+    border-radius: 0 0 30px 30px
+    font-weight: 500
+    padding: 20px
+
+    @media(min-width: 650px)
+      padding: 30px 60px
+
+    .input
+      background-color: #fff
+      border-color: #DADEF2
+
+      &:focus
+        border-color: $color-blue
+        outline: none
+
+      &.error
+        border-color: $color-red
+
+        &:focus
+          border-color: $color-red
+
+.calc-enter
+  align-items: center
+  border: 1px solid #EDF2FA
+  border-radius: 30px
+  display: flex
+  justify-content: space-between
+  max-width: 640px
+  padding: 20px
+
+  @media(min-width: 650px)
+    padding: 45px
+
+  .button
+    text-transform: uppercase
+    width: calc(50% - 10px)
