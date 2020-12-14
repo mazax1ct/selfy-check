@@ -1,5 +1,6 @@
 //переопределение дефолтных настроек fancybox
 $.fancybox.defaults.hash = false;
+$.fancybox.defaults.i18n.en.CLOSE = "Закрыть";
 
 //функция навешивания класса на шапку
 var resize_scroll = function(e) {
@@ -67,7 +68,9 @@ $(document).ready(function () {
 
   //плавный скролл к якорю при загрузке страницы
   var myHash = location.hash;
+
   location.hash = '';
+  console.log(location);
   if(myHash[1] != undefined) {
     $('html, body').animate({
       scrollTop: $(myHash).offset().top - 90
