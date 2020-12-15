@@ -28,7 +28,7 @@
 .radio-icon
   align-items: center
   align-self: center
-  border: 1px solid #DCE0E5
+  border: 1px solid #C6C9D9
   color: $text-color
   cursor: pointer
   display: flex
@@ -38,6 +38,7 @@
   line-height: 18px
   margin-right: 15px
   min-width: 20px
+  position: relative
   text-align: center
   width: 20px
 
@@ -62,7 +63,15 @@ input[type="checkbox"]:active + .checkbox-icon
 
 input[type="radio"]:checked + .radio-icon
   &::before
-    content: '●'
+    background-color: #24BDFF
+    border-radius: 50%
+    content: ''
+    height: 10px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
 
 .checkbox-text,
 .radio-text

@@ -39,28 +39,28 @@
             <div class="calc-options">
               <form action="">
                 <div class="calc-options__item">
-                  <input class="input" type="text">
+                  <input id="uk" class="js-only-number input" type="text" value="10">
                   <div>
                     <p><b>Углеводный Коэффициент</b></p>
                     <p class="small-text">Количество инсулина, покрывающее 1 хлебную единицу (1 ХЕ)</p>
                   </div>
                 </div>
                 <div class="calc-options__item">
-                  <input class="input" type="text">
+                  <input id="fc" class="js-only-number input" type="text">
                   <div>
                     <p><b>Коэффициент Чувствительности (фактор чувств. ФЧ)</b></p>
                     <p class="small-text">Насколько снизится сахар крови (в ммолях) при введении 1 ед.<br> короткого или ультракороткого инсулина</p>
                   </div>
                 </div>
                 <div class="calc-options__item">
-                  <input class="input" type="text">
+                  <input id="ai" class="js-only-number input" type="text">
                   <div>
                     <p><b>Активный Инсулин</b></p>
                     <p class="small-text">Промежуток времени, в течение которого инсулин<br> снижает уровень глюкозы</p>
                   </div>
                 </div>
                 <div class="calc-options__item">
-                  <input class="input" type="text">
+                  <input id="gkc" class="js-only-number input" type="text">
                   <div>
                     <p><b>Целевой Показатель</b></p>
                     <p class="small-text">Целевой уровень сахара крови (рекомендует врач)</p>
@@ -75,7 +75,7 @@
                   <div class="calc__row">
                     <p class="calc__row-title">Текущий уровень глюкозы:</p>
                     <div class="calc__input-wrap">
-                      <input class="input" type="text" value="">
+                      <input id="gkf" class="js-only-number input" type="text" value="">
                       <span class="calc__units">мг/дл</span>
                       <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                         <svg class="info__icon" aria-hidden="true">
@@ -87,7 +87,7 @@
                   <div class="calc__row">
                     <p class="calc__row-title">Планируемое потребление<br> хлебных единиц:</p>
                     <div class="calc__input-wrap">
-                      <input class="input" type="text" value="">
+                      <input id="ugl" class="js-only-number input" type="text" value="">
                       <span class="calc__units">ед.</span>
                       <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                         <svg class="info__icon" aria-hidden="true">
@@ -102,7 +102,7 @@
                   <div class="calc__row">
                     <p class="calc__row-title">Расчетная доза инсулина:</p>
                     <div class="calc__input-wrap">
-                      <input class="input" type="text" value="" readonly>
+                      <input id="doza" class="input" type="text" value="" readonly>
                       <span class="calc__units">ед.</span>
                       <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                         <svg class="info__icon" aria-hidden="true">
@@ -126,7 +126,7 @@
   //= template/go-top.html
 
   //= template/scripts.html
-  <script src="js/datepicker.min.js"></script>
+  <script src="js/cals.js"></script>
 </body>
 
 </html>
