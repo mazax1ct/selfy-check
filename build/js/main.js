@@ -5,7 +5,7 @@ $.fancybox.defaults.i18n.en.CLOSE = "Закрыть";
 //функция навешивания класса на шапку
 var resize_scroll = function(e) {
   var h = $(".header");
-  if($(window).scrollTop() > h.height()) {
+  if($(window).scrollTop() > h.height()/2) {
     h.addClass("scrolled");
   } else {
     h.removeClass("scrolled");

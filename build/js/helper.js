@@ -26,7 +26,7 @@ $(document).on('click', '.js-test-next', function () {
     if(cnt_1 > cnt_2) {
       $('.test-result[data-id="1"]').fadeIn();
     } else if (cnt_1 == cnt_2){
-      alert('бери оба');
+      alert('Количество ответов на вопросы равное. Для помощи в выборе обратитесь к консультанту.');
     } else {
       $('.test-result[data-id="2"]').fadeIn();
     }

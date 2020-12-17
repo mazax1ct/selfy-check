@@ -325,15 +325,15 @@
                   <div class="personal__block">
                     <label class="input-label datepicker-container">
                       <span class="input-label__text">Дата рождения</span>
-                      <input class="datepicker-here input" name="user_birth" type="text" value="">
+                      <input class="js-date-mask datepicker-here input" name="user_birth" type="text" value="">
                     </label>
                     <label class="input-label">
                       <span class="input-label__text">Email <span>*</span></span>
-                      <input class="input" name="user_email" type="text" value="">
+                      <input class="js-email-mask input" name="user_email" type="text" value="">
                     </label>
                     <label class="input-label">
                       <span class="input-label__text">Телефон <span>*</span></span>
-                      <input class="input" name="user_phone" type="text" value="">
+                      <input class="js-phone-mask input" name="user_phone" type="text" value="">
                     </label>
                   </div>
                 </div>
@@ -457,6 +457,8 @@
   <script type="text/javascript" src="js/tippy-bundle.umd.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script src="js/datepicker.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/inputmask-init.js"></script>
 </body>
 
 </html>

@@ -253,12 +253,16 @@
         <div class="calc-wrap">
           <div class="calc">
             <form action="">
+              <input id="uk" type="hidden" value="1.8">
+              <input id="kch" type="hidden" value="2.5">
+              <input id="ai" type="hidden" value="0.8">
+              <input id="cp" type="hidden" value="5">
               <div class="calc__top">
                 <div class="calc__row">
                   <p class="calc__row-title">Текущий уровень глюкозы:</p>
                   <div class="calc__input-wrap">
-                    <input class="input" type="text" value="">
-                    <span class="calc__units">мг/дл</span>
+                    <input id="tug" class="js-decimal-mask js-calc-required input" type="text" value="">
+                    <span class="calc__units">ммоль/л</span>
                     <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                       <svg class="info__icon" aria-hidden="true">
                         <use xlink:href="#question" />
@@ -269,7 +273,7 @@
                 <div class="calc__row">
                   <p class="calc__row-title">Планируемое потребление<br> хлебных единиц:</p>
                   <div class="calc__input-wrap">
-                    <input class="input" type="text" value="">
+                    <input id="he" class="js-decimal-mask js-calc-required input" type="text" value="">
                     <span class="calc__units">ед.</span>
                     <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                       <svg class="info__icon" aria-hidden="true">
@@ -278,13 +282,13 @@
                     </button>
                   </div>
                 </div>
-                <button class="calc__button button" type="button">РАССЧИТАТЬ</button>
+                <button class="js-calc calc__button button" type="button" disabled>РАССЧИТАТЬ</button>
               </div>
               <div class="calc__bottom">
                 <div class="calc__row">
                   <p class="calc__row-title">Расчетная доза инсулина:</p>
                   <div class="calc__input-wrap">
-                    <input class="input" type="text" value="" readonly>
+                    <input id="doza" class="input" type="text" value="" readonly>
                     <span class="calc__units">ед.</span>
                     <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                       <svg class="info__icon" aria-hidden="true">
@@ -372,7 +376,9 @@
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/tippy-bundle.umd.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  <script src="js/datepicker.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/inputmask-init.js"></script>
+  <script src="js/calc.js"></script>
 </body>
 
 </html>

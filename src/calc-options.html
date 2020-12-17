@@ -39,34 +39,34 @@
             <div class="calc-options">
               <form action="">
                 <div class="calc-options__item">
-                  <input id="uk" class="js-only-number input" type="text" value="10">
+                  <input id="uk" class="js-decimal-mask js-calc-option input" name="uk" type="text" value="">
                   <div>
                     <p><b>Углеводный Коэффициент</b></p>
                     <p class="small-text">Количество инсулина, покрывающее 1 хлебную единицу (1 ХЕ)</p>
                   </div>
                 </div>
                 <div class="calc-options__item">
-                  <input id="fc" class="js-only-number input" type="text">
+                  <input id="kch" class="js-decimal-mask js-calc-option input" name="fc" type="text" value="">
                   <div>
                     <p><b>Коэффициент Чувствительности (фактор чувств. ФЧ)</b></p>
                     <p class="small-text">Насколько снизится сахар крови (в ммолях) при введении 1 ед.<br> короткого или ультракороткого инсулина</p>
                   </div>
                 </div>
                 <div class="calc-options__item">
-                  <input id="ai" class="js-only-number input" type="text">
+                  <input id="ai" class="js-decimal-mask js-calc-option input" name="ai" type="text" value="">
                   <div>
                     <p><b>Активный Инсулин</b></p>
                     <p class="small-text">Промежуток времени, в течение которого инсулин<br> снижает уровень глюкозы</p>
                   </div>
                 </div>
                 <div class="calc-options__item">
-                  <input id="gkc" class="js-only-number input" type="text">
+                  <input id="cp" class="js-decimal-mask js-calc-option input" name="gkc" type="text" value="">
                   <div>
                     <p><b>Целевой Показатель</b></p>
                     <p class="small-text">Целевой уровень сахара крови (рекомендует врач)</p>
                   </div>
                 </div>
-                <button class="calc-options__button button" type="button">СОХРАНИТЬ</button>
+                <button class="calc-options__button button" type="submit" disabled>СОХРАНИТЬ</button>
               </form>
             </div>
             <div class="calc">
@@ -75,8 +75,8 @@
                   <div class="calc__row">
                     <p class="calc__row-title">Текущий уровень глюкозы:</p>
                     <div class="calc__input-wrap">
-                      <input id="gkf" class="js-only-number input" type="text" value="">
-                      <span class="calc__units">мг/дл</span>
+                      <input id="tug" class="js-decimal-mask js-calc-required input" type="text" value="">
+                      <span class="calc__units">ммоль/л</span>
                       <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                         <svg class="info__icon" aria-hidden="true">
                           <use xlink:href="#question" />
@@ -87,7 +87,7 @@
                   <div class="calc__row">
                     <p class="calc__row-title">Планируемое потребление<br> хлебных единиц:</p>
                     <div class="calc__input-wrap">
-                      <input id="ugl" class="js-only-number input" type="text" value="">
+                      <input id="he" class="js-decimal-mask js-calc-required input" type="text" value="">
                       <span class="calc__units">ед.</span>
                       <button class="js-tippy-2 info" type="button" title="Спавка" data-tippy-content="Какой-то всплывающий текст с подсказкой">
                         <svg class="info__icon" aria-hidden="true">
@@ -96,7 +96,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="calc__button button" type="button">РАССЧИТАТЬ</button>
+                  <button class="js-calc calc__button button" type="button" disabled>РАССЧИТАТЬ</button>
                 </div>
                 <div class="calc__bottom">
                   <div class="calc__row">
@@ -114,7 +114,7 @@
                 </div>
               </form>
             </div>
-            <p class="color-grey bolder" style="max-width: 640px">При использовании калькулятора рассчета доз обязательно проконсультируйтесь с врачом (специалистом) по индивидуальным расчетным коэффициентам. Вводите значения, собюлюдая разделения целой и дробной части числа десятичным разделителем (запятой).</p>
+            <p class="color-grey bolder" style="max-width: 640px">При использовании калькулятора рассчета доз обязательно проконсультируйтесь с врачом (специалистом) по индивидуальным расчетным коэффициентам. Вводите значения, собюлюдая разделения целой и дробной части числа десятичным разделителем (точкой).</p>
           </div>
         </div>
       </div>
@@ -126,7 +126,9 @@
   //= template/go-top.html
 
   //= template/scripts.html
-  <script src="js/cals.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/inputmask-init.js"></script>
+  <script src="js/calc.js"></script>
 </body>
 
 </html>
